@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="ILoggingService.cs" />
     <Compile Include="IRestaurantService.cs" />
+    <Compile Include="IReviewService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

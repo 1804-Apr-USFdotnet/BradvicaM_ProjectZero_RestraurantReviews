@@ -4,3 +4,9 @@ C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\Rest
 C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Models\obj\Debug\RR.Models.csproj.CoreCompileInputs.cache
 C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Models\obj\Debug\RR.Models.dll
 C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Models\obj\Debug\RR.Models.pdb
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Models\bin\Debug\RR.Models.dll
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Models\bin\Debug\RR.Models.pdb
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Models\obj\Debug\RR.Models.csprojResolveAssemblyReference.cache
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Models\obj\Debug\RR.Models.csproj.CoreCompileInputs.cache
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Models\obj\Debug\RR.Models.dll
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Models\obj\Debug\RR.Models.pdb

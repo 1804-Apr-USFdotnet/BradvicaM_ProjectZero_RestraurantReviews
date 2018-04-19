@@ -88,10 +88,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DomainServices\RestaurantServiceTests.cs" />
+    <Compile Include="DomainServices\ReviewServiceTests.cs" />
     <Compile Include="Mappings\MappingProfileTests.cs" />
     <Compile Include="Models\RestaurantTests.cs" />
     <Compile Include="Models\ReviewTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryObjects\RestaurantReviewsQueryTests.cs" />
     <Compile Include="QueryObjects\TopThreeRatingQueryTests.cs" />
     <Compile Include="QueryObjects\SearchRestaurantQueryTests.cs" />
   </ItemGroup>

@@ -8,5 +8,7 @@ namespace RR.RepositoryContracts
     public interface IReviewRepository
     {
         IEnumerable<Review> GetAll(Expression<Func<Review, bool>> predicate);
+        IEnumerable<Review> GetAll();
+        void Add(Review review);
     }
 }

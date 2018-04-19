@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RestaurantService.cs" />
+    <Compile Include="ReviewService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RR.DomainContracts\RR.DomainContracts.csproj">

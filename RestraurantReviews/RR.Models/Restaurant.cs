@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace RR.Models
 {
@@ -18,6 +20,11 @@ namespace RR.Models
         {
             return $"\nId: {Id}\nName: {Name} \nStreet: {Street}\nCity: {City}\nState: {State}\nZipCode: {ZipCode}" +
                    $"\nPhoneNumber: {PhoneNumber}\nWebsite: {Website}\nRating: {AverageRating}\n";
+        }
+
+        public void CalculateAverageRating(IEnumerable<Review> reviews)
+        {
+            AverageRating = reviews.Select(x => x.Rating).Average();
         }
     }
 }
