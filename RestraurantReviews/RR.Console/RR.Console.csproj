@@ -38,7 +38,14 @@
     <Reference Include="AutoMapper, Version=6.2.2.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
       <HintPath>..\packages\AutoMapper.6.2.2\lib\net45\AutoMapper.dll</HintPath>
     </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
@@ -58,10 +65,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Repositories\Repositories.csproj">
-      <Project>{2B197E51-2FD7-473D-8FDC-F8939F3562FD}</Project>
-      <Name>Repositories</Name>
-    </ProjectReference>
     <ProjectReference Include="..\RR.DomainContracts\RR.DomainContracts.csproj">
       <Project>{42F03871-A175-43B4-8573-B05B10621846}</Project>
       <Name>RR.DomainContracts</Name>
@@ -73,6 +76,14 @@
     <ProjectReference Include="..\RR.Mapping\RR.Mapping.csproj">
       <Project>{F15D40FD-6608-43F9-9B98-A65088F8E62D}</Project>
       <Name>RR.Mapping</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RR.Models\RR.Models.csproj">
+      <Project>{59B9E961-1C32-4EC4-B0A0-E176367070CB}</Project>
+      <Name>RR.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RR.Repositories\RR.Repositories.csproj">
+      <Project>{E203DFB7-16F1-4656-9C43-D80B50692D56}</Project>
+      <Name>RR.Repositories</Name>
     </ProjectReference>
     <ProjectReference Include="..\RR.RepositoryContracts\RR.RepositoryContracts.csproj">
       <Project>{D196DCBD-1E43-4471-9EF6-F1E675F3F055}</Project>

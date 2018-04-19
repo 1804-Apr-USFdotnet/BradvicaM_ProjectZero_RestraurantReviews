@@ -1,0 +1,770 @@
+﻿Restaurants[0] = 
+Id: 92886b8b-2221-df3d-b03f-060275ef6546
+Name: Aquila Head 
+Street: 670-6195 Quisque Street
+City: Kapiti
+State: North Island
+ZipCode: 665
+PhoneNumber: 1-588-160-9571
+Website: Leonard
+Rating: 2
+
+Restaurants[1] = 
+Id: 050d3cfd-acc8-4885-cf3c-08eb6f67dbe8
+Name: Dana Bush 
+Street: 466-7223 Erat. Rd.
+City: Hamburg
+State: Hamburg
+ZipCode: 825740
+PhoneNumber: 1-846-985-4003
+Website: Gage
+Rating: 4
+
+Restaurants[2] = 
+Id: d864ffed-b564-8541-0767-0c38adb7e611
+Name: Keane Price 
+Street: 989 At Rd.
+City: Istanbul
+State: Istanbul
+ZipCode: 2136
+PhoneNumber: 1-436-303-5575
+Website: Cruz
+Rating: 5
+
+Restaurants[3] = 
+Id: fa8dca94-0bd8-29e2-4186-0d1ba6d3e7cb
+Name: Claudia Kirby 
+Street: Ap #487-953 Mauris Rd.
+City: Berlin
+State: BE
+ZipCode: 12736
+PhoneNumber: 1-291-908-7350
+Website: Duncan
+Rating: 7
+
+Restaurants[4] = 
+Id: 65afbc6f-b4ba-a80c-f7e1-0d87bf97e293
+Name: Kevyn Mckay 
+Street: 9678 Hendrerit St.
+City: Córdoba
+State: AN
+ZipCode: 68486
+PhoneNumber: 1-733-369-9936
+Website: Travis
+Rating: 8
+
+Restaurants[5] = 
+Id: 6c7c6692-0400-9d0e-db64-12ed04b2a0d1
+Name: Samantha Bryant 
+Street: P.O. Box 845, 3133 Ligula St.
+City: Segovia
+State: Castilla y León
+ZipCode: 20613
+PhoneNumber: 1-806-638-8223
+Website: Dexter
+Rating: 7
+
+Restaurants[6] = 
+Id: 9880282f-cd17-27c3-bc1c-16827d505572
+Name: Quintessa Russell 
+Street: P.O. Box 203, 4559 Volutpat. Road
+City: Birmingham
+State: Alabama
+ZipCode: 6379
+PhoneNumber: 1-106-128-7747
+Website: Addison
+Rating: 9
+
+Restaurants[7] = 
+Id: 4083e31d-8e48-0848-e79e-17ec1efbcce9
+Name: Marshall Cline 
+Street: P.O. Box 994, 1172 Nulla St.
+City: Schwechat
+State: Lower Austria
+ZipCode: 51751
+PhoneNumber: 1-335-441-8356
+Website: Mason
+Rating: 3
+
+Restaurants[8] = 
+Id: effc2f05-6e44-a8c9-7805-1bfb0c79f4f9
+Name: Chaim Mejia 
+Street: P.O. Box 957, 3695 Elit, Av.
+City: Rhayader
+State: RA
+ZipCode: 6222
+PhoneNumber: 1-998-434-7524
+Website: Yuli
+Rating: 3
+
+Restaurants[9] = 
+Id: 9e272162-ddcd-6ad0-31b6-239f09438e7e
+Name: Hillary Baird 
+Street: Ap #590-865 Magna Av.
+City: Alajuela
+State: A
+ZipCode: 35604
+PhoneNumber: 1-607-688-0189
+Website: Jason
+Rating: 9
+
+Restaurants[10] = 
+Id: 9f28dc42-7f12-44ab-982e-2493f864216c
+Name: Zena Huber 
+Street: P.O. Box 254, 7340 Ac Road
+City: Carterton
+State: Oxfordshire
+ZipCode: 4305
+PhoneNumber: 1-220-580-9773
+Website: Owen
+Rating: 9
+
+Restaurants[11] = 
+Id: 93dcbc2a-64d1-8e4b-9c83-29d67e10dada
+Name: Brett Hunter 
+Street: 2350 Enim. St.
+City: Ambattur
+State: Tamil Nadu
+ZipCode: 4161
+PhoneNumber: 1-148-696-3957
+Website: Tarik
+Rating: 2
+
+Restaurants[12] = 
+Id: fd96e53e-7529-17c2-fa1f-2d90c9a5ac28
+Name: Clayton Valenzuela 
+Street: Ap #777-852 Nec Av.
+City: Luziânia
+State: Goiás
+ZipCode: 5445
+PhoneNumber: 1-913-126-3005
+Website: Aladdin
+Rating: 5
+
+Restaurants[13] = 
+Id: 8788d272-035c-685d-72f9-2ebd88148f04
+Name: Halee Bruce 
+Street: P.O. Box 533, 7176 Taciti Avenue
+City: Helmond
+State: N.
+ZipCode: 14332
+PhoneNumber: 1-497-439-2880
+Website: Hu
+Rating: 6
+
+Restaurants[14] = 
+Id: fd4c7bde-cc4b-1da3-32ad-3180111972b2
+Name: Calvin Harrison 
+Street: P.O. Box 233, 4373 Consequat Road
+City: Finspång
+State: E
+ZipCode: 60128
+PhoneNumber: 1-831-664-5509
+Website: Reuben
+Rating: 10
+
+Restaurants[15] = 
+Id: e880d40a-2101-7040-7b55-37357aab25f3
+Name: Genevieve Nielsen 
+Street: P.O. Box 395, 3877 Nonummy Rd.
+City: Galway
+State: C
+ZipCode: 32414
+PhoneNumber: 1-143-278-4592
+Website: Ezra
+Rating: 8
+
+Restaurants[16] = 
+Id: f19b5f08-1d17-247e-f4ea-37378baa8334
+Name: Amaya Wilkerson 
+Street: 3812 Mauris Rd.
+City: Timaru
+State: South Island
+ZipCode: 4209
+PhoneNumber: 1-365-697-9039
+Website: Jack
+Rating: 1
+
+Restaurants[17] = 
+Id: 1a354416-317b-4018-1fa0-3bc98a1e5716
+Name: Yael Herman 
+Street: Ap #470-1572 Risus. Street
+City: Huntsville
+State: Alabama
+ZipCode: 61110
+PhoneNumber: 1-666-663-4371
+Website: Daquan
+Rating: 9
+
+Restaurants[18] = 
+Id: f25bc591-45cc-4df1-515a-3d5ad61a70d0
+Name: Carl Foster 
+Street: 745-7796 Eget Av.
+City: Paulista
+State: Pernambuco
+ZipCode: 3534
+PhoneNumber: 1-628-381-2796
+Website: Rigel
+Rating: 5
+
+Restaurants[19] = 
+Id: 951268e0-86ac-f483-d2c9-40804ebdf02e
+Name: Farrah Beck 
+Street: Ap #781-7568 Egestas. Av.
+City: La Florida
+State: RM
+ZipCode: 9526
+PhoneNumber: 1-425-529-9337
+Website: Mohammad
+Rating: 6
+
+Restaurants[20] = 
+Id: 6d3e4006-c4d7-2f2a-64ab-40a2e728c827
+Name: Kareem Robertson 
+Street: 1278 Tincidunt, Rd.
+City: St. Thomas
+State: Ontario
+ZipCode: 6387
+PhoneNumber: 1-184-448-3524
+Website: Thane
+Rating: 8
+
+Restaurants[21] = 
+Id: 83c0d1c5-22d6-42b8-aa09-447337217801
+Name: Moses Aguilar 
+Street: P.O. Box 718, 9134 Vulputate, Av.
+City: Wyoming
+State: WY
+ZipCode: 262420
+PhoneNumber: 1-908-461-8437
+Website: Allistair
+Rating: 8
+
+Restaurants[22] = 
+Id: 5308a716-7637-b637-07be-4486584263e8
+Name: Dalton Hamilton 
+Street: Ap #979-8154 Aliquet Rd.
+City: Tay
+State: ON
+ZipCode: 3832
+PhoneNumber: 1-380-621-2018
+Website: Hamilton
+Rating: 10
+
+Restaurants[23] = 
+Id: 309c78ee-7ac8-f6aa-9793-4756cd38dad4
+Name: Travis Wiley 
+Street: P.O. Box 499, 8314 Duis St.
+City: Wałbrzych
+State: Dolnośląskie
+ZipCode: 70203
+PhoneNumber: 1-629-461-8977
+Website: Bruno
+Rating: 1
+
+Restaurants[24] = 
+Id: e29b55e4-b684-a698-3834-537d7ecb8423
+Name: Jordan Higgins 
+Street: 851-2874 Semper Rd.
+City: Whangarei
+State: NI
+ZipCode: 11410
+PhoneNumber: 1-434-725-6173
+Website: Lee
+Rating: 10
+
+Restaurants[25] = 
+Id: 394390cb-ffd9-756b-48d8-58859fa824bd
+Name: Sylvia Cervantes 
+Street: Ap #545-4256 Dictum. Street
+City: Rio Grande
+State: RS
+ZipCode: 26199
+PhoneNumber: 1-709-219-3787
+Website: Jasper
+Rating: 5
+
+Restaurants[26] = 
+Id: 65d85e06-faf1-6473-2dd4-5bce6d705fed
+Name: Grady Wilkerson 
+Street: 7978 Sociis Road
+City: Jelenia Góra
+State: Dolnośląskie
+ZipCode: 819428
+PhoneNumber: 1-248-245-8337
+Website: Daquan
+Rating: 1
+
+Restaurants[27] = 
+Id: 1154a927-47a0-7f16-b276-5cab6ab0d5bd
+Name: Cruz Keith 
+Street: Ap #755-6834 Mauris. Rd.
+City: Sint-Gillis
+State: Brussels Hoofdstedelijk Gewest
+ZipCode: 95063
+PhoneNumber: 1-905-701-5796
+Website: Uriel
+Rating: 4
+
+Restaurants[28] = 
+Id: da2f6fea-83d6-3c91-6512-5ccc397cdd17
+Name: Kadeem Stuart 
+Street: 980 Vel Rd.
+City: Toulouse
+State: Midi-Pyrénées
+ZipCode: 72074
+PhoneNumber: 1-663-219-7985
+Website: Nash
+Rating: 2
+
+Restaurants[29] = 
+Id: 5f0e174e-64bb-eab2-0c32-5d76112cf0ad
+Name: Aurelia England 
+Street: Ap #510-2428 Cursus Ave
+City: Erie
+State: Pennsylvania
+ZipCode: 2380
+PhoneNumber: 1-835-237-5764
+Website: Baxter
+Rating: 3
+
+Restaurants[30] = 
+Id: e51fcc4b-41df-6e60-0402-5d9021c0681f
+Name: Rogan Copeland 
+Street: P.O. Box 536, 8201 Sed Avenue
+City: Leuze
+State: Namen
+ZipCode: 470025
+PhoneNumber: 1-239-648-6911
+Website: Nash
+Rating: 9
+
+Restaurants[31] = 
+Id: 8c93aae7-eda7-a171-7bab-5ea9b5afdd5d
+Name: Declan Maldonado 
+Street: 4225 Et, Rd.
+City: Marabá
+State: Pará
+ZipCode: 10158
+PhoneNumber: 1-915-576-2105
+Website: Cairo
+Rating: 7
+
+Restaurants[32] = 
+Id: b4132e2a-6baa-3c4f-7e06-6007f345d7b8
+Name: Ryan Ballard 
+Street: Ap #861-4704 Nam Avenue
+City: Radom
+State: MA
+ZipCode: 72815
+PhoneNumber: 1-936-219-4063
+Website: Declan
+Rating: 1
+
+Restaurants[33] = 
+Id: dcc1ab3a-9579-a493-bae4-607b2151dbce
+Name: Steel Townsend 
+Street: Ap #819-493 Sit Street
+City: Bremerhaven
+State: HB
+ZipCode: 9983
+PhoneNumber: 1-461-613-0968
+Website: Harlan
+Rating: 5
+
+Restaurants[34] = 
+Id: 5f7562fd-8463-4b46-9625-62617368761a
+Name: Billy Bobs Texas BBQ 
+Street: 123 Barbeque St.
+City: Kansas City
+State: MO
+ZipCode: 81721
+PhoneNumber: 8761234121
+Website: www.billybobs.com
+Rating: 0
+
+Restaurants[35] = 
+Id: bec0c57f-dcfe-e8d0-772b-702d904ffae5
+Name: Anjolie Vaughan 
+Street: 821-9848 Amet St.
+City: Wollongong
+State: New South Wales
+ZipCode: 2301
+PhoneNumber: 1-827-255-1294
+Website: Bevis
+Rating: 9
+
+Restaurants[36] = 
+Id: cd0c1b83-3353-be99-cc60-788262b96bc0
+Name: Ursula Sexton 
+Street: Ap #853-2056 Malesuada St.
+City: Chełm
+State: Lubelskie
+ZipCode: 1225
+PhoneNumber: 1-414-845-5578
+Website: Brendan
+Rating: 4
+
+Restaurants[37] = 
+Id: 61d3e333-be0b-e90f-ed0a-7b799746b48f
+Name: Kasimir West 
+Street: 236-8983 Vitae Rd.
+City: Lourdes
+State: Manitoba
+ZipCode: 17010
+PhoneNumber: 1-129-788-7685
+Website: Philip
+Rating: 2
+
+Restaurants[38] = 
+Id: cb2fc366-3c22-7f87-ee72-851c8925fe5b
+Name: Omar Pugh 
+Street: P.O. Box 592, 3947 Ac St.
+City: Erdemli
+State: Mer
+ZipCode: 20342
+PhoneNumber: 1-673-217-3701
+Website: Raphael
+Rating: 5
+
+Restaurants[39] = 
+Id: 459756f4-be9e-f38c-de0c-8ba48fa075ef
+Name: Sydnee Bush 
+Street: Ap #133-7151 Pellentesque Avenue
+City: Cork
+State: Munster
+ZipCode: 727231
+PhoneNumber: 1-417-911-8260
+Website: Hammett
+Rating: 6
+
+Restaurants[40] = 
+Id: 24baf6dd-f95a-9249-f60a-8c810709af12
+Name: Avram Ball 
+Street: P.O. Box 283, 1604 Donec Rd.
+City: Albi
+State: Midi-Pyrénées
+ZipCode: 3160
+PhoneNumber: 1-956-291-1029
+Website: Curran
+Rating: 2
+
+Restaurants[41] = 
+Id: 102236a7-3927-24fb-dbe5-8c93defad3ec
+Name: Cairo Rodriguez 
+Street: 2363 Donec Ave
+City: Waalwijk
+State: Noord Brabant
+ZipCode: 575257
+PhoneNumber: 1-577-726-3213
+Website: Andrew
+Rating: 9
+
+Restaurants[42] = 
+Id: ae13147d-9a24-9bec-d4f1-93ccc13c974c
+Name: Regina Blankenship 
+Street: 239-249 Laoreet St.
+City: Albury
+State: New South Wales
+ZipCode: 90648
+PhoneNumber: 1-923-675-4378
+Website: Daniel
+Rating: 3
+
+Restaurants[43] = 
+Id: 1345345d-467e-b182-af37-9558afe536a1
+Name: Demetrius Ruiz 
+Street: P.O. Box 873, 2446 Quisque Street
+City: Jonesboro
+State: Arkansas
+ZipCode: 38654
+PhoneNumber: 1-290-258-2004
+Website: Merritt
+Rating: 5
+
+Restaurants[44] = 
+Id: bf515709-035a-80b4-b23e-9aa58bd10b3b
+Name: Zeus Todd 
+Street: P.O. Box 400, 4650 Eu St.
+City: Galway
+State: Connacht
+ZipCode: 55961
+PhoneNumber: 1-459-687-4508
+Website: Slade
+Rating: 3
+
+Restaurants[45] = 
+Id: b6701770-1233-bf7f-f1e4-9f0b6c560f62
+Name: Pascale Short 
+Street: Ap #700-6605 Luctus Rd.
+City: Boignee
+State: NA
+ZipCode: 76125
+PhoneNumber: 1-850-293-1131
+Website: Timothy
+Rating: 7
+
+Restaurants[46] = 
+Id: 33650b6c-dbd4-6829-6f91-a4315c7fc4a9
+Name: Mariam Carpenter 
+Street: 716 Arcu. St.
+City: Queanbeyan
+State: NSW
+ZipCode: 8825
+PhoneNumber: 1-598-285-3469
+Website: Stone
+Rating: 3
+
+Restaurants[47] = 
+Id: 4627c890-d5fe-bdad-b996-a59cc58ee9df
+Name: Tallulah Huber 
+Street: 412-6888 Sociis Ave
+City: Puntarenas
+State: P
+ZipCode: 33759
+PhoneNumber: 1-720-449-7683
+Website: Dieter
+Rating: 2
+
+Restaurants[48] = 
+Id: d24e8241-2fb2-85c7-f6f0-a74fef80d4d4
+Name: Duncan Strickland 
+Street: P.O. Box 846, 9423 Sem Av.
+City: Clackmannan
+State: Clackmannanshire
+ZipCode: 10106
+PhoneNumber: 1-915-607-7771
+Website: Brett
+Rating: 10
+
+Restaurants[49] = 
+Id: 355ba5fb-1547-bdaf-3b33-adf3abaaf65b
+Name: Roary Livingston 
+Street: P.O. Box 647, 4092 Egestas Street
+City: Jammu
+State: Jammu and Kashmir
+ZipCode: 219
+PhoneNumber: 1-914-655-3916
+Website: Allistair
+Rating: 4
+
+Restaurants[50] = 
+Id: 04635aa7-b044-b340-e924-afda71feae40
+Name: Inga Baker 
+Street: P.O. Box 737, 4834 Lacus. Street
+City: Clovenfords
+State: SE
+ZipCode: 68175
+PhoneNumber: 1-495-601-6643
+Website: Mark
+Rating: 7
+
+Restaurants[51] = 
+Id: 9ee77742-1eb3-582a-4ca2-b19f78e04e65
+Name: Hilel Jacobs 
+Street: Ap #974-4480 Eleifend. St.
+City: Tacoma
+State: WA
+ZipCode: 6638
+PhoneNumber: 1-569-742-8997
+Website: Jameson
+Rating: 1
+
+Restaurants[52] = 
+Id: d68b2a7c-ac4d-7964-99ab-bf5d138cc19f
+Name: Murphy Woodward 
+Street: 220-3707 Nunc Avenue
+City: Mogi das Cruzes
+State: São Paulo
+ZipCode: 2815
+PhoneNumber: 1-399-500-3802
+Website: Dolan
+Rating: 1
+
+Restaurants[53] = 
+Id: 5984d099-e5ed-0fbc-b1ac-bfcff95b1312
+Name: Honorato Donovan 
+Street: Ap #589-9480 Nisl Road
+City: Leiden
+State: Zuid Holland
+ZipCode: 82002
+PhoneNumber: 1-102-332-2759
+Website: Ashton
+Rating: 10
+
+Restaurants[54] = 
+Id: bd85e11b-3a5c-f45c-71d1-c21752f3ba7b
+Name: Myra Fitzgerald 
+Street: P.O. Box 947, 3984 Arcu Street
+City: Dehri
+State: Bihar
+ZipCode: 763100
+PhoneNumber: 1-480-875-7401
+Website: Yuli
+Rating: 8
+
+Restaurants[55] = 
+Id: d575e5d3-860e-39dd-7d30-ca081a4b7f77
+Name: Cyrus Powell 
+Street: 219-2812 Feugiat Av.
+City: Upplands Väsby
+State: AB
+ZipCode: 73633
+PhoneNumber: 1-205-879-8461
+Website: Chaney
+Rating: 1
+
+Restaurants[56] = 
+Id: cd76d7e0-46ef-5978-ed96-d8074f6d77dd
+Name: Joel Savage 
+Street: 375-237 Rutrum, Road
+City: Kawartha Lakes
+State: ON
+ZipCode: 2224
+PhoneNumber: 1-839-874-9518
+Website: Ishmael
+Rating: 1
+
+Restaurants[57] = 
+Id: d4685320-59dd-b7f4-ee5b-e38f6688d9af
+Name: Blaze Holder 
+Street: Ap #144-1481 Pharetra, Ave
+City: Stafford
+State: ST
+ZipCode: 33904
+PhoneNumber: 1-650-596-0091
+Website: Macaulay
+Rating: 4
+
+Restaurants[58] = 
+Id: b3a1a0c1-b4bb-9d2b-c287-e531d10b7ad0
+Name: Quemby Stephenson 
+Street: 736-8931 Porttitor Rd.
+City: Toledo
+State: OH
+ZipCode: 8975
+PhoneNumber: 1-392-391-3719
+Website: Abel
+Rating: 2
+
+Restaurants[59] = 
+Id: 648d7d23-7c8c-9c8d-7320-e7cf55819256
+Name: Yoshio Zimmerman 
+Street: Ap #811-1923 Sem Road
+City: Dublin
+State: Leinster
+ZipCode: 54463
+PhoneNumber: 1-520-562-7486
+Website: Ira
+Rating: 2
+
+Restaurants[60] = 
+Id: be956d8a-ba57-0484-7954-e83eca71d7cb
+Name: Jerome Bennett 
+Street: Ap #787-2905 Ullamcorper, Road
+City: Nantes
+State: PA
+ZipCode: 6310
+PhoneNumber: 1-268-401-0353
+Website: Derek
+Rating: 5
+
+Restaurants[61] = 
+Id: 81144c27-d4e0-0145-1aaa-ebb19b4c1696
+Name: Zane Bartlett 
+Street: 113-751 Fermentum Rd.
+City: Vienna
+State: Vienna
+ZipCode: 6141
+PhoneNumber: 1-561-310-7132
+Website: Hector
+Rating: 7
+
+Restaurants[62] = 
+Id: f2832534-0330-5d21-f3e0-ebe8e0be76c4
+Name: Chaney Pratt 
+Street: 9459 Pretium Avenue
+City: Colchane
+State: Tarapacá
+ZipCode: 51224
+PhoneNumber: 1-836-601-7026
+Website: Vance
+Rating: 7
+
+Restaurants[63] = 
+Id: ba5f61aa-ce1c-d834-edff-ed144aa843bb
+Name: Casey Ray 
+Street: 4828 Ante Ave
+City: Donosti
+State: PV
+ZipCode: 5520
+PhoneNumber: 1-498-865-8801
+Website: Bert
+Rating: 6
+
+Restaurants[64] = 
+Id: 394e8784-0382-5aba-53e8-ef338aae568a
+Name: Dakota Witt 
+Street: P.O. Box 215, 2356 Fringilla, St.
+City: Cedar Rapids
+State: IA
+ZipCode: 76863
+PhoneNumber: 1-264-282-0877
+Website: Vincent
+Rating: 3
+
+Restaurants[65] = 
+Id: 2d530399-578b-4b47-69a8-f0529a34b359
+Name: Ora Jennings 
+Street: 9989 Mi Avenue
+City: Dieppe
+State: HA
+ZipCode: 15405
+PhoneNumber: 1-730-372-9980
+Website: Patrick
+Rating: 3
+
+Restaurants[66] = 
+Id: b59c7528-fa4f-4365-1608-f587e4aaa2ad
+Name: Brenna Prince 
+Street: 6418 Et Ave
+City: Ottawa-Carleton
+State: ON
+ZipCode: 319291
+PhoneNumber: 1-167-102-6778
+Website: Armando
+Rating: 7
+
+Restaurants[67] = 
+Id: b29cc3ed-09bd-4747-a6a1-fcb648b9aada
+Name: Elvis Moreno 
+Street: 7002 Amet Road
+City: Belo Horizonte
+State: MG
+ZipCode: 30919
+PhoneNumber: 1-878-211-8561
+Website: Dean
+Rating: 3
+
+Restaurants[68] = 
+Id: 131fcd90-f992-8287-02cb-fd5fb02dcaac
+Name: Thaddeus Green 
+Street: P.O. Box 738, 2315 Posuere, Ave
+City: Auxerre
+State: BO
+ZipCode: 20872
+PhoneNumber: 1-713-698-9406
+Website: Nigel
+Rating: 9
+
+Restaurants[69] = 
+Id: 85555e2a-2c07-3422-bf29-ffd55ddcc523
+Name: Katelyn Workman 
+Street: Ap #649-9377 Sem. Street
+City: Bathurst
+State: New South Wales
+ZipCode: 11310
+PhoneNumber: 1-977-319-1438
+Website: Chaney
+Rating: 5
+

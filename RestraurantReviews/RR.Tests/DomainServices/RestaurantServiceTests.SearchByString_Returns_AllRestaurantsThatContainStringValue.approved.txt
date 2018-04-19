@@ -1,0 +1,11 @@
+﻿Restaurants[0] = 
+Id: e29b55e4-b684-a698-3834-537d7ecb8423
+Name: Jordan Higgins 
+Street: 851-2874 Semper Rd.
+City: Whangarei
+State: NI
+ZipCode: 11410
+PhoneNumber: 1-434-725-6173
+Website: Lee
+Rating: 10
+

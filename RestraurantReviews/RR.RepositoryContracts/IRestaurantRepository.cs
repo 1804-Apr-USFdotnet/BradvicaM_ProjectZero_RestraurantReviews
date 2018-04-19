@@ -10,5 +10,6 @@ namespace RR.RepositoryContracts
         Restaurant Get(Expression<Func<Restaurant, bool>> predicate);
         IEnumerable<Restaurant> GetAll();
         IEnumerable<Restaurant> GetAll(Expression<Func<Restaurant, bool>> predicate);
+        void Add(Restaurant restaurant);
     }
 }

@@ -15,17 +15,14 @@ namespace RR.Tests.Models
         {
             var restaurant = new Restaurant
             {
-                Address = new Address
-                {
-                    City = "Kansas City",
-                    State = "MO",
-                    Street = "123 Barbeque St.",
-                    ZipCode = 81721
-                },
+                City = "Kansas City",
+                State = "MO",
+                Street = "123 Barbeque St.",
+                ZipCode = 81721,
                 Id = Guid.Empty,
                 Name = "Billy Bobs Texas BBQ",
                 PhoneNumber = "8761234121",
-                Rating = 0.0,
+                AverageRating = 0.0,
                 Website = "www.billybobs.com"
             };
 
