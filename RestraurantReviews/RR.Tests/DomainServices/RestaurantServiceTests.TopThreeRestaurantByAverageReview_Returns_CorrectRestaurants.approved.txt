@@ -1,33 +1,11 @@
 ﻿Restaurants[0] = 
-Id: fd4c7bde-cc4b-1da3-32ad-3180111972b2
-Name: Calvin Harrison 
-Street: P.O. Box 233, 4373 Consequat Road
-City: Finspång
-State: E
-ZipCode: 60128
-PhoneNumber: 1-831-664-5509
-Website: Reuben
-Rating: 10
-
-Restaurants[1] = 
-Id: 5308a716-7637-b637-07be-4486584263e8
-Name: Dalton Hamilton 
-Street: Ap #979-8154 Aliquet Rd.
-City: Tay
-State: ON
-ZipCode: 3832
-PhoneNumber: 1-380-621-2018
-Website: Hamilton
-Rating: 10
-
-Restaurants[2] = 
-Id: e29b55e4-b684-a698-3834-537d7ecb8423
-Name: Jordan Higgins 
-Street: 851-2874 Semper Rd.
-City: Whangarei
-State: NI
-ZipCode: 11410
-PhoneNumber: 1-434-725-6173
-Website: Lee
-Rating: 10
+Id: 664823c7-c985-4987-9d03-f13265f9e84e
+Name: Billy Bobs Texas BBQ 
+Street: 123 Barbeque St.
+City: Kansas City
+State: MO
+ZipCode: 81721
+PhoneNumber: 8761234121
+Website: www.billybobs.com
+Rating: 0
 

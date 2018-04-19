@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
 using RR.Models;
 using RR.RepositoryContracts;
 
@@ -16,9 +15,9 @@ namespace RR.Repositories
             _context = context;
         }
 
-        public Restaurant Get(Expression<Func<Restaurant, bool>> predicate)
+        public Restaurant GetById(Guid id)
         {
-            return _context.Restaurants.Where(predicate).First();
+            return _context.Restaurants.First(x => x.Id == id);
         }
 
         public IEnumerable<Restaurant> GetAll()
@@ -26,14 +25,14 @@ namespace RR.Repositories
             return _context.Restaurants;
         }
 
-        public IEnumerable<Restaurant> GetAll(Expression<Func<Restaurant, bool>> predicate)
-        {
-            return _context.Restaurants.Where(predicate);
-        }
-
         public void Add(Restaurant restaurant)
         {
             _context.Restaurants.Add(restaurant);
+            _context.SaveChanges();
+        }
+
+        public void UpdateRestaurants()
+        {
             _context.SaveChanges();
         }
     }

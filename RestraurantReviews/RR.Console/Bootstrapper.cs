@@ -5,14 +5,12 @@ using RR.DomainServices;
 using RR.Mapping;
 using RR.Repositories;
 using RR.RepositoryContracts;
-using IRestaurantService = RR.DomainContracts.IRestaurantService;
-using RestaurantService = RR.DomainServices.RestaurantService;
 
 namespace RR.Console
 {
     public class Bootstrapper
     {
-        public static IContainer Container;
+        private static IContainer _container;
 
         public static IContainer RegisterTypes()
         {
@@ -28,15 +26,16 @@ namespace RR.Console
             builder.RegisterInstance(mapper).As<IMapper>();
 
             //Repositories
-            builder.RegisterType<Repositories.RestaurantRepository>().As<RepositoryContracts.IRestaurantRepository>();
-            builder.RegisterType<ReviewRepository>().As<ReviewRepository>();
+            builder.RegisterType<RestaurantRepository>().As<IRestaurantRepository>();
+            builder.RegisterType<ReviewRepository>().As<IReviewRepository>();
 
             //Services
             builder.RegisterType<RestaurantService>().As<IRestaurantService>();
+            builder.RegisterType<ReviewService>().As<IReviewService>();
 
-            Container = builder.Build();
+            _container = builder.Build();
 
-            return Container;
+            return _container;
         }
     }
 }

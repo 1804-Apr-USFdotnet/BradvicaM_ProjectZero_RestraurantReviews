@@ -20,5 +20,16 @@ namespace RR.Repositories
         {
             return _context.Reviews.Where(predicate);
         }
+
+        public IEnumerable<Review> GetAll()
+        {
+            return _context.Reviews;
+        }
+
+        public void Add(Review review)
+        {
+            _context.Reviews.Add(review);
+            _context.SaveChanges();
+        }
     }
 }

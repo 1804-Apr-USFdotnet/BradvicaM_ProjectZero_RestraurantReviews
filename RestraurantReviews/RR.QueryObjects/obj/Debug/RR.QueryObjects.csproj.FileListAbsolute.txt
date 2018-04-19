@@ -7,3 +7,12 @@ C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\Rest
 C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.QueryObjects\obj\Debug\RR.QueryObjects.csproj.CopyComplete
 C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.QueryObjects\obj\Debug\RR.QueryObjects.dll
 C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.QueryObjects\obj\Debug\RR.QueryObjects.pdb
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.QueryObjects\bin\Debug\RR.QueryObjects.dll
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.QueryObjects\bin\Debug\RR.QueryObjects.pdb
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.QueryObjects\bin\Debug\RR.Models.dll
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.QueryObjects\bin\Debug\RR.Models.pdb
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.QueryObjects\obj\Debug\RR.QueryObjects.csprojResolveAssemblyReference.cache
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.QueryObjects\obj\Debug\RR.QueryObjects.csproj.CoreCompileInputs.cache
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.QueryObjects\obj\Debug\RR.QueryObjects.csproj.CopyComplete
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.QueryObjects\obj\Debug\RR.QueryObjects.dll
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.QueryObjects\obj\Debug\RR.QueryObjects.pdb
