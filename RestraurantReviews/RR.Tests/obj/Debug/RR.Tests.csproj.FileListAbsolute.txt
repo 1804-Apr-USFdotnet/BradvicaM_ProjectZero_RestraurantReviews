@@ -55,3 +55,17 @@ C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\Rest
 C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Tests\obj\Debug\RR.Tests.pdb
 C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Tests\bin\Debug\RR.Mapping.dll
 C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Tests\bin\Debug\RR.Mapping.pdb
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Tests\bin\Debug\RR.QueryObjects.dll
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Tests\bin\Debug\RR.QueryObjects.pdb
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Tests\bin\Debug\RR.Console.exe
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Tests\bin\Debug\RR.DomainContracts.dll
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Tests\bin\Debug\RR.Repositories.dll
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Tests\bin\Debug\RR.RepositoryContracts.dll
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Tests\bin\Debug\RR.DomainServices.dll
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Tests\bin\Debug\RR.Console.pdb
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Tests\bin\Debug\RR.Console.exe.config
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Tests\bin\Debug\RR.DomainContracts.pdb
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Tests\bin\Debug\RR.Repositories.pdb
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Tests\bin\Debug\RR.Repositories.dll.config
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Tests\bin\Debug\RR.RepositoryContracts.pdb
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Tests\bin\Debug\RR.DomainServices.pdb

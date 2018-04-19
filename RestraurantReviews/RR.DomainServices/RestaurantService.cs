@@ -1,7 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Linq;
 using RR.DomainContracts;
 using RR.Models;
+using RR.QueryObjects;
 using RR.RepositoryContracts;
 
 namespace RR.DomainServices
@@ -17,22 +18,30 @@ namespace RR.DomainServices
 
         public List<Restaurant> TopThreeRestaurantByAverageReview()
         {
-            throw new NotImplementedException();
+            var resaurants = _restaurantRepository.GetAll();
+
+            var query = new TopThreeRatingQuery();
+
+            return query.AsExpression(resaurants);
         }
 
         public List<Restaurant> AllRestaurants()
         {
-            throw new NotImplementedException();
+            return _restaurantRepository.GetAll().ToList();
         }
 
         public List<Restaurant> SearchByString(string searchParameter)
         {
-            throw new NotImplementedException();
+            var query = new SearchRestaurantQuery(searchParameter);
+
+            var restaurants = _restaurantRepository.GetAll();
+
+            return query.AsExpression(restaurants);
         }
 
         public void AddRestaurant(Restaurant restaurant)
         {
-            throw new NotImplementedException();
+            _restaurantRepository.Add(restaurant);
         }
     }
 }
