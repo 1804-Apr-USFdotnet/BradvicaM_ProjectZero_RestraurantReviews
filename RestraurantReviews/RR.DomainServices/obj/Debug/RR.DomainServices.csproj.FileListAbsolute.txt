@@ -1,0 +1,13 @@
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.DomainServices\bin\Debug\RR.DomainServices.dll
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.DomainServices\bin\Debug\RR.DomainServices.pdb
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.DomainServices\obj\Debug\RR.DomainServices.csprojResolveAssemblyReference.cache
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.DomainServices\obj\Debug\RR.DomainServices.csproj.CoreCompileInputs.cache
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.DomainServices\obj\Debug\RR.DomainServices.dll
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.DomainServices\obj\Debug\RR.DomainServices.pdb
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.DomainServices\bin\Debug\RR.DomainContracts.dll
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.DomainServices\bin\Debug\RR.Models.dll
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.DomainServices\bin\Debug\RR.DomainContracts.pdb
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.DomainServices\bin\Debug\RR.Models.pdb
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.DomainServices\obj\Debug\RR.DomainServices.csproj.CopyComplete
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.DomainServices\bin\Debug\RR.RepositoryContracts.dll
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.DomainServices\bin\Debug\RR.RepositoryContracts.pdb

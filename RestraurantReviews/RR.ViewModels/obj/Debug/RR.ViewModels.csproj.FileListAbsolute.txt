@@ -1,0 +1,5 @@
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.ViewModels\bin\Debug\RR.ViewModels.dll
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.ViewModels\bin\Debug\RR.ViewModels.pdb
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.ViewModels\obj\Debug\RR.ViewModels.csproj.CoreCompileInputs.cache
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.ViewModels\obj\Debug\RR.ViewModels.dll
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.ViewModels\obj\Debug\RR.ViewModels.pdb

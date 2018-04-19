@@ -1,0 +1,12 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using RR.Models;
+
+namespace RR.RepositoryContracts
+{
+    public interface IReviewRepository
+    {
+        IEnumerable<Review> GetAll(Expression<Func<Review, bool>> predicate);
+    }
+}
