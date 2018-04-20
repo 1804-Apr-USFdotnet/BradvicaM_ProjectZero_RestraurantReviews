@@ -171,11 +171,7 @@ namespace RR.Console
 
         private void ReviewRestaurant()
         {
-            ViewRestaurantShortList();
-
-            _inputOutput.Output("\nChoose A Restaurant To Review:\n");
-
-            var restaurantToReview = _inputOutput.ReadInteger();
+            var restaurntForReview = ChooseARestaurant();
 
             _inputOutput.Output("\nName please:\n");
             var name = _inputOutput.ReadString();
@@ -186,14 +182,11 @@ namespace RR.Console
             _inputOutput.Output("\nComments:\n");
             var comment = _inputOutput.ReadString();
 
-            var allRestaurants = _restaurantService.AllRestaurants();
-            var restaurant = allRestaurants[restaurantToReview];
-
             var review = new Review
             {
                 Comment = comment,
                 Id = Guid.NewGuid(),
-                Restaurant = restaurant,
+                Restaurant = restaurntForReview,
                 Rating = rating,
                 ReviewerName = name
             };
