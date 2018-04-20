@@ -4,13 +4,19 @@ using RR.DomainContracts;
 
 namespace RR.Logging
 {
-    class LoggingService : ILoggingService
+    public class LoggingService : ILoggingService
     {
-        private readonly ILogger _logger;
+        private readonly ILogger _logger = LogManager.GetCurrentClassLogger();
 
-        public LoggingService(ILogger logger)
+        public LoggingService()
         {
-            _logger = logger;
+            var config = new NLog.Config.LoggingConfiguration();
+
+            var logfile = new NLog.Targets.FileTarget() { FileName = "file.txt", Name = "logfile" };
+
+            config.LoggingRules.Add(new NLog.Config.LoggingRule("*", LogLevel.Debug, logfile));
+
+            LogManager.Configuration = config;
         }
 
         public void Log(Exception e)

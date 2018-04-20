@@ -1,5 +1,4 @@
 ﻿using Autofac;
-using RR.DomainContracts;
 
 namespace RR.Console
 {
@@ -8,17 +7,9 @@ namespace RR.Console
         static void Main(string[] args)
         {
             var container = Bootstrapper.RegisterTypes();
+            var application = container.Resolve<IApplication>();
 
-            var service = container.Resolve<IRestaurantService>();
-
-            var allRestaurants = service.AllRestaurants();
-
-            foreach (var i in allRestaurants)
-            {
-                System.Console.WriteLine(i);
-            }
-
-            System.Console.ReadLine();
+            application.Run();
         }
     }
 }
