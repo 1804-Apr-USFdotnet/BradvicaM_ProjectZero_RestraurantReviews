@@ -41,5 +41,18 @@ namespace RR.Console
                 System.Console.WriteLine(i);
             }
         }
+
+        public void Output(Restaurant restaurant)
+        {
+            System.Console.WriteLine(restaurant);
+        }
+
+        public void Output(IEnumerable<Review> reviews)
+        {
+            foreach (var variable in reviews)
+            {
+                System.Console.WriteLine(variable);
+            }
+        }
     }
 }

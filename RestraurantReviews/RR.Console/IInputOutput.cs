@@ -11,5 +11,7 @@ namespace RR.Console
         int ReadInteger();
         void Output(IEnumerable<Restaurant> restaurants);
         void Output(IEnumerable<string> stringList);
+        void Output(Restaurant restaurant);
+        void Output(IEnumerable<Review> reviews);
     }
 }

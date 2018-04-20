@@ -144,3 +144,7 @@ C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\Restrau
 C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Tests\bin\Debug\RR.ViewModels.pdb
 C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Tests\bin\Debug\RR.ViewModels.dll
 C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Tests\bin\Debug\RR.ViewModels.pdb
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Tests\bin\Debug\RR.Logging.dll
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Tests\bin\Debug\NLog.dll
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Tests\bin\Debug\RR.Logging.pdb
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Tests\bin\Debug\NLog.xml

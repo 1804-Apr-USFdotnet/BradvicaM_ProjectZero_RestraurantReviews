@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using RR.DomainContracts;
 using RR.Models;
@@ -124,18 +125,80 @@ namespace RR.Console
 
         private void ViewAllRestaurants()
         {
-            _inputOutput.Output("\nAll Restaurants:\n");
+            _inputOutput.Output("\nOrder By:\n1 - Name\n2 - State\n3 - Rating\n4 - City\n");
+
+            int userInput = 0;
+
+            try
+            {
+                userInput = _inputOutput.ReadInteger();
+            }
+            catch (Exception e)
+            {
+                _loggingService.Log(e);
+            }
 
             var results = _restaurantService.AllRestaurants();
+            IEnumerable<string> ordered = new List<string>();
 
-            var restaurantList = results.Select(x => x.Name);
+            switch (userInput)
+            {
+                case 1:
+                    results = results.OrderBy(x => x.Name).ToList();
+                    ordered = results.Select(x => x.Name);
+                    break;
+                case 2:
+                    results = results.OrderBy(x => x.State).ToList();
+                    ordered = results.Select(x => x.Name + " " + x.State);
+                    break;
+                case 3:
+                    results = results.OrderBy(x => x.AverageRating).ToList();
+                    ordered = results.Select(x => x.Name + " " + x.AverageRating);
+                    break;
+                case 4:
+                    results = results.OrderBy(x => x.City).ToList();
+                    ordered = results.Select(x => x.Name + " " + x.City);
+                    break;
+                default:
+                    _inputOutput.Output("\nNot Valid!\n");
+                    Run();
+                    break;
+            }
 
-            _inputOutput.Output(restaurantList);
+            _inputOutput.Output("\nAll Restaurants:\n");
+            _inputOutput.Output(ordered);
         }
 
         private void ReviewRestaurant()
         {
+            ViewRestaurantShortList();
 
+            _inputOutput.Output("\nChoose A Restaurant To Review:\n");
+
+            var restaurantToReview = _inputOutput.ReadInteger();
+
+            _inputOutput.Output("\nName please:\n");
+            var name = _inputOutput.ReadString();
+
+            _inputOutput.Output("\nRating please (number):\n");
+            var rating = _inputOutput.ReadDouble();
+
+            _inputOutput.Output("\nComments:\n");
+            var comment = _inputOutput.ReadString();
+
+            var allRestaurants = _restaurantService.AllRestaurants();
+            var restaurant = allRestaurants[restaurantToReview];
+
+            var review = new Review
+            {
+                Comment = comment,
+                Id = Guid.NewGuid(),
+                Restaurant = restaurant,
+                Rating = rating,
+                ReviewerName = name
+            };
+
+            _reviewService.AddReview(review);
         }
 
         private void TopThreeRatedRestaurants()
@@ -144,17 +207,42 @@ namespace RR.Console
 
             _inputOutput.Output("\nThe Top Three Rated Restaurants Are:\n");
 
-            _inputOutput.Output(results);
+            var viewModel = from x in results
+                select ($"Name: {x.Name} Rating: {x.AverageRating}");
+
+            _inputOutput.Output(viewModel);
         }
 
         private void ViewRestaurantDetails()
         {
+            ViewRestaurantShortList();
 
+            _inputOutput.Output("\nChoose A Restaurant for details:");
+
+            var restaurantIndex = _inputOutput.ReadInteger();
+
+            var allRestaurnts = _restaurantService.AllRestaurants();
+
+            var restaurantToShow = allRestaurnts[restaurantIndex];
+
+            _inputOutput.Output(restaurantToShow);
         }
 
         private void AllReviewsOfARestaurant()
         {
+           ViewRestaurantShortList();
 
+            _inputOutput.Output("\nChoose A Restaurant for details:");
+
+            var restaurantIndex = _inputOutput.ReadInteger();
+
+            var allRestaurnts = _restaurantService.AllRestaurants();
+
+            var restaurantForReviews = allRestaurnts[restaurantIndex];
+
+            var reviews = _reviewService.AllReviews(restaurantForReviews);
+
+            _inputOutput.Output(reviews);
         }
 
         private void Search()
@@ -171,6 +259,20 @@ namespace RR.Console
         private void Quit()
         {
             _userIsDone = true;
+        }
+
+        private void ViewRestaurantShortList()
+        {
+            var allretaurants = _restaurantService.AllRestaurants().ToList();
+
+            var viewModel = new List<string>();
+
+            for (var i = 0; i < allretaurants.Count; i++)
+            {
+                viewModel.Add(i + " - " + allretaurants[i].Name);
+            }
+
+            _inputOutput.Output(viewModel);
         }
     }
 }

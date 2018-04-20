@@ -1,6 +1,1 @@
-﻿Restaurant Reviews:[0] = 
-Id: b6f2b335-2ddb-475e-ac12-ccf6e53e3330
-Rating: 5
-Comment: It was ok.
-Name: Mike
-
+﻿Restaurant Reviews: is empty
