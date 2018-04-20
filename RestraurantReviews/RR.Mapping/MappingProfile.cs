@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using RR.Models;
+using RR.ViewModels;
 
 namespace RR.Mapping
 {
@@ -6,7 +8,7 @@ namespace RR.Mapping
     {
         public MappingProfile()
         {
-
+            CreateMap<Restaurant, RestaurantViewModel>().ForSourceMember(x => x.Id, opt => opt.Ignore());
         }
     }
 }
