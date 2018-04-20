@@ -1,0 +1,9 @@
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.RepositoryContracts\bin\Release\RR.RepositoryContracts.dll
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.RepositoryContracts\bin\Release\RR.RepositoryContracts.pdb
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.RepositoryContracts\bin\Release\RR.Models.dll
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.RepositoryContracts\bin\Release\RR.Models.pdb
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.RepositoryContracts\obj\Release\RR.RepositoryContracts.csprojResolveAssemblyReference.cache
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.RepositoryContracts\obj\Release\RR.RepositoryContracts.csproj.CoreCompileInputs.cache
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.RepositoryContracts\obj\Release\RR.RepositoryContracts.csproj.CopyComplete
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.RepositoryContracts\obj\Release\RR.RepositoryContracts.dll
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.RepositoryContracts\obj\Release\RR.RepositoryContracts.pdb

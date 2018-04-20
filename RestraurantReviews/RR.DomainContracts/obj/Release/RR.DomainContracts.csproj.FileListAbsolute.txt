@@ -1,0 +1,9 @@
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.DomainContracts\bin\Release\RR.DomainContracts.dll
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.DomainContracts\bin\Release\RR.DomainContracts.pdb
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.DomainContracts\bin\Release\RR.Models.dll
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.DomainContracts\bin\Release\RR.Models.pdb
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.DomainContracts\obj\Release\RR.DomainContracts.csprojResolveAssemblyReference.cache
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.DomainContracts\obj\Release\RR.DomainContracts.csproj.CoreCompileInputs.cache
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.DomainContracts\obj\Release\RR.DomainContracts.csproj.CopyComplete
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.DomainContracts\obj\Release\RR.DomainContracts.dll
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.DomainContracts\obj\Release\RR.DomainContracts.pdb

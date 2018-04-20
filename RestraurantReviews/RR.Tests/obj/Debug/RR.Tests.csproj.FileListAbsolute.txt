@@ -140,3 +140,5 @@ C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\Restrau
 C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Tests\obj\Debug\RR.Tests.csproj.CopyComplete
 C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Tests\obj\Debug\RR.Tests.dll
 C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Tests\obj\Debug\RR.Tests.pdb
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Tests\bin\Debug\RR.ViewModels.dll
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Tests\bin\Debug\RR.ViewModels.pdb

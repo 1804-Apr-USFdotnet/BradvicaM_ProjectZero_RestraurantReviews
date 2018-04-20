@@ -50,5 +50,15 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RR.Models\RR.Models.csproj">
+      <Project>{59B9E961-1C32-4EC4-B0A0-E176367070CB}</Project>
+      <Name>RR.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RR.ViewModels\RR.ViewModels.csproj">
+      <Project>{835F9C96-55E9-456F-BB20-2F437B31202D}</Project>
+      <Name>RR.ViewModels</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
