@@ -2,6 +2,7 @@
 using AutoMapper;
 using RR.DomainContracts;
 using RR.DomainServices;
+using RR.Logging;
 using RR.Mapping;
 using RR.Repositories;
 using RR.RepositoryContracts;
@@ -25,6 +26,9 @@ namespace RR.Console
             //Automapper
             builder.RegisterInstance(mapper).As<IMapper>();
 
+            //Logging
+            builder.RegisterType<LoggingService>().As<ILoggingService>();
+
             //Repositories
             builder.RegisterType<RestaurantRepository>().As<IRestaurantRepository>();
             builder.RegisterType<ReviewRepository>().As<IReviewRepository>();
@@ -32,6 +36,10 @@ namespace RR.Console
             //Services
             builder.RegisterType<RestaurantService>().As<IRestaurantService>();
             builder.RegisterType<ReviewService>().As<IReviewService>();
+
+            //Console
+            builder.RegisterType<InputOutput>().As<IInputOutput>();
+            builder.RegisterType<Application>().As<IApplication>();
 
             _container = builder.Build();
 
