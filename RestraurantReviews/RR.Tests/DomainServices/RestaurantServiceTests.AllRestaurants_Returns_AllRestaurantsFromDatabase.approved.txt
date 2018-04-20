@@ -216,7 +216,7 @@ State: TX
 ZipCode: 76705
 PhoneNumber: 254 540 4654
 Website: hp.com
-Rating: 8
+Rating: 7.65
 
 Restaurants[20] = 
 Id: 6136953b-4ce3-4b12-b5ca-6d5dca4b5b6e
