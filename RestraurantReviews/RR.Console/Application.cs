@@ -215,30 +215,14 @@ namespace RR.Console
 
         private void ViewRestaurantDetails()
         {
-            ViewRestaurantShortList();
-
-            _inputOutput.Output("\nChoose A Restaurant for details:");
-
-            var restaurantIndex = _inputOutput.ReadInteger();
-
-            var allRestaurnts = _restaurantService.AllRestaurants();
-
-            var restaurantToShow = allRestaurnts[restaurantIndex];
+            var restaurantToShow = ChooseARestaurant();
 
             _inputOutput.Output(restaurantToShow);
         }
 
         private void AllReviewsOfARestaurant()
         {
-           ViewRestaurantShortList();
-
-            _inputOutput.Output("\nChoose A Restaurant for details:");
-
-            var restaurantIndex = _inputOutput.ReadInteger();
-
-            var allRestaurnts = _restaurantService.AllRestaurants();
-
-            var restaurantForReviews = allRestaurnts[restaurantIndex];
+            var restaurantForReviews = ChooseARestaurant();
 
             var reviews = _reviewService.AllReviews(restaurantForReviews);
 
@@ -273,6 +257,19 @@ namespace RR.Console
             }
 
             _inputOutput.Output(viewModel);
+        }
+
+        private Restaurant ChooseARestaurant()
+        {
+            ViewRestaurantShortList();
+
+            _inputOutput.Output("\nChoose A Restaurant:");
+
+            var restaurantIndex = _inputOutput.ReadInteger();
+
+            var allRestaurnts = _restaurantService.AllRestaurants();
+
+            return allRestaurnts[restaurantIndex];
         }
     }
 }
