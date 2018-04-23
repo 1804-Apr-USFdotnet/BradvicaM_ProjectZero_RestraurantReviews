@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using RR.Models;
+using RR.ViewModels;
 
 namespace RR.Console
 {
@@ -52,6 +53,22 @@ namespace RR.Console
             foreach (var variable in reviews)
             {
                 System.Console.WriteLine(variable);
+            }
+        }
+
+        public void Output(IEnumerable<RestaurantNameViewModel> viewModels)
+        {
+            foreach (var i in viewModels)
+            {
+                System.Console.WriteLine(i.Name);
+            }
+        }
+
+        public void Output(IEnumerable<TopRatedRestaurantViewModel> viewModels)
+        {
+            foreach (var i in viewModels)
+            {
+                System.Console.WriteLine($"Name: {i.Name} Rating: {i.AverageRating}\n");
             }
         }
     }

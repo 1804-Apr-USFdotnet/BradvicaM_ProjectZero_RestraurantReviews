@@ -63,13 +63,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Application.cs" />
-    <Compile Include="IApplication.cs" />
+    <Compile Include="App_Start\Application.cs" />
+    <Compile Include="App_Start\IApplication.cs" />
+    <Compile Include="Controllers\Controller.cs" />
+    <Compile Include="Controllers\IController.cs" />
+    <Compile Include="Controllers\RestaurantController.cs" />
+    <Compile Include="Controllers\ReviewController.cs" />
     <Compile Include="IInputOutput.cs" />
     <Compile Include="InputOutput.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="App_Start\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Bootstrapper.cs" />
+    <Compile Include="App_Start\Bootstrapper.cs" />
+    <Compile Include="Views\AddRestaurantView.cs" />
+    <Compile Include="Views\ActionResult.cs" />
+    <Compile Include="Views\ViewEngine.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -104,6 +111,11 @@
       <Project>{D196DCBD-1E43-4471-9EF6-F1E675F3F055}</Project>
       <Name>RR.RepositoryContracts</Name>
     </ProjectReference>
+    <ProjectReference Include="..\RR.ViewModels\RR.ViewModels.csproj">
+      <Project>{835F9C96-55E9-456F-BB20-2F437B31202D}</Project>
+      <Name>RR.ViewModels</Name>
+    </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

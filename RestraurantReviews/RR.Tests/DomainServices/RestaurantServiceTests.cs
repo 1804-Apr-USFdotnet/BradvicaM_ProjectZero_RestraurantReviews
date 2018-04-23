@@ -58,7 +58,7 @@ namespace RR.Tests.DomainServices
             {
                 var service = container.Resolve<IRestaurantService>();
 
-                var results = service.SearchByString("Jordan");
+                var results = service.SearchAll("Jordan");
 
                 Approvals.VerifyAll(results, "Restaurants");
             }

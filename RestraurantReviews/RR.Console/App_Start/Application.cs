@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using AutoMapper;
 using RR.DomainContracts;
 using RR.Models;
+using RR.ViewModels;
 
 namespace RR.Console
 {
@@ -12,15 +14,17 @@ namespace RR.Console
         private readonly IReviewService _reviewService;
         private readonly ILoggingService _loggingService;
         private readonly IInputOutput _inputOutput;
+        private readonly IMapper _mapper;
 
         private bool _userIsDone;
 
-        public Application(IRestaurantService restaurantService, IReviewService reviewService, ILoggingService loggingService, IInputOutput inputOutput)
+        public Application(IRestaurantService restaurantService, IReviewService reviewService, ILoggingService loggingService, IInputOutput inputOutput, IMapper mapper)
         {
             _restaurantService = restaurantService;
             _reviewService = reviewService;
             _loggingService = loggingService;
             _inputOutput = inputOutput;
+            _mapper = mapper;
         }
 
         public void Run()
@@ -182,16 +186,15 @@ namespace RR.Console
             _inputOutput.Output("\nComments:\n");
             var comment = _inputOutput.ReadString();
 
-            var review = new Review
+            var review = new AddReviewViewModel
             {
                 Comment = comment,
-                Id = Guid.NewGuid(),
                 Restaurant = restaurntForReview,
                 Rating = rating,
                 ReviewerName = name
             };
 
-            _reviewService.AddReview(review);
+            _reviewService.AddReview(_mapper.Map<Review>(review));
         }
 
         private void TopThreeRatedRestaurants()
@@ -200,8 +203,7 @@ namespace RR.Console
 
             _inputOutput.Output("\nThe Top Three Rated Restaurants Are:\n");
 
-            var viewModel = from x in results
-                select ($"Name: {x.Name} Rating: {x.AverageRating}");
+            var viewModel = _mapper.Map<IEnumerable<TopRatedRestaurantViewModel>>(results);
 
             _inputOutput.Output(viewModel);
         }
@@ -228,7 +230,7 @@ namespace RR.Console
 
             var value = _inputOutput.ReadString();
 
-            var results = _restaurantService.SearchByString(value);
+            var results = _restaurantService.SearchAll(value);
 
             _inputOutput.Output(results);
         }
@@ -242,12 +244,7 @@ namespace RR.Console
         {
             var allretaurants = _restaurantService.AllRestaurants().ToList();
 
-            var viewModel = new List<string>();
-
-            for (var i = 0; i < allretaurants.Count; i++)
-            {
-                viewModel.Add(i + " - " + allretaurants[i].Name);
-            }
+            var viewModel = _mapper.Map<IEnumerable<RestaurantNameViewModel>>(allretaurants);
 
             _inputOutput.Output(viewModel);
         }
@@ -258,11 +255,9 @@ namespace RR.Console
 
             _inputOutput.Output("\nChoose A Restaurant:");
 
-            var restaurantIndex = _inputOutput.ReadInteger();
+            var restaurantName = _inputOutput.ReadString();
 
-            var allRestaurnts = _restaurantService.AllRestaurants();
-
-            return allRestaurnts[restaurantIndex];
+            return _restaurantService.SearchByName(restaurantName);
         }
     }
 }

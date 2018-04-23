@@ -30,13 +30,18 @@ namespace RR.DomainServices
             return _restaurantRepository.GetAll().ToList();
         }
 
-        public List<Restaurant> SearchByString(string searchParameter)
+        public List<Restaurant> SearchAll(string searchParameter)
         {
             var query = new SearchRestaurantQuery(searchParameter);
 
             var restaurants = _restaurantRepository.GetAll();
 
             return query.AsExpression(restaurants);
+        }
+
+        public Restaurant SearchByName(string searchParameter)
+        {
+            return _restaurantRepository.GetByName(searchParameter);
         }
 
         public void AddRestaurant(Restaurant restaurant)

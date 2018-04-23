@@ -4,11 +4,11 @@ using RR.DomainContracts;
 
 namespace RR.Logging
 {
-    public class LoggingService : ILoggingService
+    public class FileLoggingService : ILoggingService
     {
         private readonly ILogger _logger = LogManager.GetCurrentClassLogger();
 
-        public LoggingService()
+        public FileLoggingService()
         {
             var config = new NLog.Config.LoggingConfiguration();
 

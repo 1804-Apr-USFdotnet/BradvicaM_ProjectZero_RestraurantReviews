@@ -27,7 +27,7 @@ namespace RR.Console
             builder.RegisterInstance(mapper).As<IMapper>();
 
             //Logging
-            builder.RegisterType<LoggingService>().As<ILoggingService>();
+            builder.RegisterType<FileLoggingService>().As<ILoggingService>();
 
             //Repositories
             builder.RegisterType<RestaurantRepository>().As<IRestaurantRepository>();
@@ -40,6 +40,8 @@ namespace RR.Console
             //Console
             builder.RegisterType<InputOutput>().As<IInputOutput>();
             builder.RegisterType<Application>().As<IApplication>();
+
+            
 
             _container = builder.Build();
 
