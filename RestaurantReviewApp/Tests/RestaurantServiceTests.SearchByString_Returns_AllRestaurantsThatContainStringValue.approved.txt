@@ -1,0 +1,11 @@
+﻿Restaurants[0] = 
+Id: 07ea7c51-070b-4ee9-9883-12443a96752b
+Name: Dirty Devin's Mud Hut 
+Street: 123 Dirty St.
+City: Tampa
+State: FL
+ZipCode: 12341
+PhoneNumber: 1234569131
+Website: www.dirtydevins.com
+Rating: 0
+

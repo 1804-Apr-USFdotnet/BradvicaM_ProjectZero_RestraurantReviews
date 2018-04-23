@@ -1,0 +1,22 @@
+﻿Restaurants[0] = 
+Id: 07ea7c51-070b-4ee9-9883-12443a96752b
+Name: Dirty Devin's Mud Hut 
+Street: 123 Dirty St.
+City: Tampa
+State: FL
+ZipCode: 12341
+PhoneNumber: 1234569131
+Website: www.dirtydevins.com
+Rating: 0
+
+Restaurants[1] = 
+Id: 10073061-d73d-4af0-8c5a-3b5a87632d11
+Name: Miguel's Little Mexico 
+Street: 45 23nd St.
+City: Kansas City
+State: MO
+ZipCode: 18712
+PhoneNumber: 1238764591
+Website: www.miguels.com
+Rating: 0
+
