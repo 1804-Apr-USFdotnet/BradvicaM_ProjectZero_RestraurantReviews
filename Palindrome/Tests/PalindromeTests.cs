@@ -55,15 +55,5 @@ namespace Tests
 
             Assert.AreEqual(expected, result);
         }
-
-        [TestMethod]
-        public void Compression_GivenAString_RemovesSpecialCharactersAndSpaces()
-        {
-            var result = Palindrome.CompressString("never Odd, or Even.");
-
-            const string expected = "neveroddoreven";
-
-            Assert.AreEqual(expected, result);
-        }
     }
 }

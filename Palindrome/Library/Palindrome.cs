@@ -6,10 +6,20 @@ namespace Library
     {
         public static bool IsPalindrome(string value)
         {
-            var str = CompressString(value);
+            var str = value.ToLower();
 
-            var asCharArray = str.ToCharArray();
-            var reversed = string.Copy(str).ToCharArray();
+            string compressed = null;
+
+            foreach (var t in str)
+            {
+                if (!(char.IsPunctuation(t) || char.IsWhiteSpace(t)))
+                {
+                    compressed += t;
+                }
+            }
+
+            var asCharArray = compressed.ToCharArray();
+            var reversed = string.Copy(compressed).ToCharArray();
             Array.Reverse(reversed);
 
             return Compare(asCharArray, reversed);
@@ -38,23 +48,6 @@ namespace Library
             }
 
             return true;
-        }
-
-        public static string CompressString(string value)
-        {
-            var str = value.ToLower();
-
-            string returnString = null;
-
-            foreach (var t in str)
-            {
-                if (!(char.IsPunctuation(t) || char.IsWhiteSpace(t)))
-                {
-                    returnString += t;
-                }
-            }
-
-            return returnString;
         }
     }
 }
