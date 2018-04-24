@@ -63,8 +63,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actions\AddRestaurantAction.cs" />
+    <Compile Include="Actions\AllReviewsOfRestaurantAction.cs" />
+    <Compile Include="Actions\DefaultAction.cs" />
+    <Compile Include="Actions\SearchAction.cs" />
+    <Compile Include="Actions\TopThreeRatedRestaurantsAction.cs" />
+    <Compile Include="Actions\ViewRestaurantDetailsAction.cs" />
     <Compile Include="App\Application.cs" />
     <Compile Include="App\IApplication.cs" />
+    <Compile Include="App\IApplicationAction.cs" />
+    <Compile Include="Actions\ReviewRestaurantAction.cs" />
+    <Compile Include="Actions\ViewAllRestaurantsAction.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RestaurantController.cs" />
     <Compile Include="Controllers\ReviewController.cs" />
     <Compile Include="App\IInputOutput.cs" />

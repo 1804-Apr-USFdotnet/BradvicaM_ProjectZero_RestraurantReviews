@@ -7,7 +7,8 @@ namespace RR.Console
         static void Main()
         {
             var container = Bootstrapper.RegisterTypes();
-            var application = container.Resolve<IApplication>();
+            
+            var application = new Application(container.Resolve<IInputOutput>(), container);
 
             application.Run();
         }

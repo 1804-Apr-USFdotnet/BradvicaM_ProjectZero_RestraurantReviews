@@ -1,5 +1,6 @@
 ﻿using Autofac;
 using AutoMapper;
+using RR.Console.Actions;
 using RR.Console.Controllers;
 using RR.DomainContracts;
 using RR.DomainServices;
@@ -27,6 +28,9 @@ namespace RR.Console
             //Automapper
             builder.RegisterInstance(mapper).As<IMapper>();
 
+            //Auto Container
+            //builder.RegisterInstance(_container).As<IContainer>();
+
             //Logging
             builder.RegisterType<FileLoggingService>().As<ILoggingService>();
 
@@ -45,6 +49,17 @@ namespace RR.Console
             //Controllers
             builder.RegisterType<RestaurantController>().AsSelf();
             builder.RegisterType<ReviewController>().AsSelf();
+            builder.RegisterType<HomeController>().AsSelf();
+
+            //Application Actions
+            builder.RegisterType<AddRestaurantAction>().AsSelf();
+            builder.RegisterType<AllReviewsOfRestaurantAction>().AsSelf();
+            builder.RegisterType<DefaultAction>().AsSelf();
+            builder.RegisterType<ReviewRestaurantAction>().AsSelf();
+            builder.RegisterType<SearchAction>().AsSelf();
+            builder.RegisterType<TopThreeRatedRestaurantsAction>().AsSelf();
+            builder.RegisterType<ViewAllRestaurantsAction>().AsSelf();
+            builder.RegisterType<ViewRestaurantDetailsAction>().AsSelf();
 
             _container = builder.Build();
 

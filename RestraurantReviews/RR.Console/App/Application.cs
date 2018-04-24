@@ -1,61 +1,59 @@
-﻿using RR.Console.Controllers;
-using RR.Console.Views;
+﻿using System;
+using System.Collections.Generic;
+using Autofac;
+using RR.Console.Actions;
 
 namespace RR.Console
 {
     public class Application : IApplication
     {
         private readonly IInputOutput _inputOutput;
-        private readonly RestaurantController _restaurantController;
-        private readonly ReviewController _reviewController;
+        private readonly Dictionary<int, IApplicationAction> _applicationSelection;
 
+        private const int HomeControllerIndex = 0;
         private bool _userIsDone;
 
-        public Application(IInputOutput inputOutput, ReviewController reviewController, RestaurantController restaurantController)
+        public Application(IInputOutput inputOutput, IContainer container)
         {
             _inputOutput = inputOutput;
-            _reviewController = reviewController;
-            _restaurantController = restaurantController;
+
+            _applicationSelection = new Dictionary<int, IApplicationAction>
+            {
+                { 0, container.Resolve<DefaultAction>() },
+                { 1, container.Resolve<AddRestaurantAction>()},
+                { 2, container.Resolve<ViewAllRestaurantsAction>() },
+                { 3, container.Resolve<ReviewRestaurantAction>() },
+                { 4, container.Resolve<TopThreeRatedRestaurantsAction>() },
+                { 5, container.Resolve<ViewRestaurantDetailsAction>() },
+                { 6, container.Resolve<AllReviewsOfRestaurantAction>() },
+                { 7, container.Resolve<SearchAction>() }
+            };
         }
 
         public void Run()
         {
             while (_userIsDone == false)
             {
-                Render(ViewEngine.Index());
+                _applicationSelection[HomeControllerIndex].Execute();
 
-                var input = _inputOutput.ReadInteger();
-                
-                switch (input)
+                try
                 {
-                    case 1:
-                        //AddRestaurant();
-                        break;
-                    case 2:
-                        //ViewAllRestaurants();
-                        break;
-                    case 3:
-                        //ReviewRestaurant();
-                        break;
-                    case 4:
-                        TopThreeRatedRestaurants();
-                        break;
-                    case 5:
-                        ViewRestaurantDetails();
-                        break;
-                    case 6:
-                        AllReviewsOfARestaurant();
-                        break;
-                    case 7:
-                        Search();
-                        break;
-                    case 8:
-                        Quit();
-                        break;
-                    default:
-                        _inputOutput.Output("\nThat is not an option!\n");
-                        Run();
-                        break;
+                    var input = _inputOutput.ReadInteger();
+
+                    if (input == 8)
+                    {
+                        _userIsDone = true;
+                    }
+
+                    _applicationSelection[input].Execute();
+                }
+                catch (FormatException e)
+                {
+                    System.Console.WriteLine($"Numbers Only! {e.Message}");
+                }
+                catch (KeyNotFoundException e)
+                {
+                    System.Console.WriteLine($"That Input is not viable! {e.Message}");
                 }
             }
         }
@@ -177,60 +175,5 @@ namespace RR.Console
             _reviewService.AddReview(_mapper.Map<Review>(review));
         }
         */
-
-        private void TopThreeRatedRestaurants()
-        {
-            Render(_restaurantController.TopRatedRestaurants());
-        }
-
-        private void ViewRestaurantDetails()
-        {
-            Render(_restaurantController.AllRestaurants());
-
-            Render(_restaurantController.RestaurantDetails(ReadInput()));
-        }
-
-        private void AllReviewsOfARestaurant()
-        {
-            Render(_restaurantController.InputRestaurantName());
-
-            Render(_reviewController.RestaurantReviews(ReadInput()));
-        }
-
-        private void Search()
-        {
-            Render(_restaurantController.InputSearchTerm());
-
-            Render(_restaurantController.SearchForEntity(ReadInput()));
-        }
-
-        private void Quit() => _userIsDone = true;
-  
-        private void Render(ActionResult view) => view.Render();
-
-        private string ReadInput() => _inputOutput.ReadString();
-
-        /*
-        private void ViewRestaurantShortList()
-        {
-            var allretaurants = _restaurantService.AllRestaurants().ToList();
-
-            var viewModel = _mapper.Map<IEnumerable<RestaurantNameViewModel>>(allretaurants);
-
-            _inputOutput.Output(viewModel);
-        }
-
-        private Restaurant ChooseARestaurant()
-        {
-            ViewRestaurantShortList();
-
-            _inputOutput.Output("\nChoose A Restaurant:");
-
-            var restaurantName = _inputOutput.ReadString();
-
-            return _restaurantService.SearchByName(restaurantName);
-        }
-        */
-
     }
 }
