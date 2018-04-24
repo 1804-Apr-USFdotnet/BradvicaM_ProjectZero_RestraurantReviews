@@ -13,3 +13,6 @@ C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\Rest
 C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.ViewModels\bin\Debug\RR.Models.dll
 C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.ViewModels\bin\Debug\RR.Models.pdb
 C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.ViewModels\obj\Debug\RR.ViewModels.csproj.CopyComplete
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.ViewModels\bin\Debug\RR.Models.dll
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.ViewModels\bin\Debug\RR.Models.pdb
+C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.ViewModels\obj\Debug\RR.ViewModels.csproj.CopyComplete

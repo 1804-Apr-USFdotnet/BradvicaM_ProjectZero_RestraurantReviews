@@ -1,5 +1,6 @@
 ﻿using Autofac;
 using AutoMapper;
+using RR.Console.Controllers;
 using RR.DomainContracts;
 using RR.DomainServices;
 using RR.Logging;
@@ -41,7 +42,9 @@ namespace RR.Console
             builder.RegisterType<InputOutput>().As<IInputOutput>();
             builder.RegisterType<Application>().As<IApplication>();
 
-            
+            //Controllers
+            builder.RegisterType<RestaurantController>().AsSelf();
+            builder.RegisterType<ReviewController>().AsSelf();
 
             _container = builder.Build();
 

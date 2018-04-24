@@ -63,19 +63,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\Application.cs" />
-    <Compile Include="App_Start\IApplication.cs" />
-    <Compile Include="Controllers\Controller.cs" />
-    <Compile Include="Controllers\IController.cs" />
+    <Compile Include="App\Application.cs" />
+    <Compile Include="App\IApplication.cs" />
     <Compile Include="Controllers\RestaurantController.cs" />
     <Compile Include="Controllers\ReviewController.cs" />
-    <Compile Include="IInputOutput.cs" />
-    <Compile Include="InputOutput.cs" />
-    <Compile Include="App_Start\Program.cs" />
+    <Compile Include="App\IInputOutput.cs" />
+    <Compile Include="App\InputOutput.cs" />
+    <Compile Include="App\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="App_Start\Bootstrapper.cs" />
-    <Compile Include="Views\AddRestaurantView.cs" />
+    <Compile Include="App\Bootstrapper.cs" />
+    <Compile Include="Views\Home\IndexView.cs" />
+    <Compile Include="Views\Restaurant\AddRestaurantView.cs" />
     <Compile Include="Views\ActionResult.cs" />
+    <Compile Include="Views\Restaurant\AddRestuarantSuccessView.cs" />
+    <Compile Include="Views\Restaurant\AllRestaurantsView.cs" />
+    <Compile Include="Views\Restaurant\InputSearchTermView.cs" />
+    <Compile Include="Views\Restaurant\RestaurantDetailsView.cs" />
+    <Compile Include="Views\Restaurant\SearchForEntityView.cs" />
+    <Compile Include="Views\Restaurant\TopRatedRestaurantsView.cs" />
+    <Compile Include="Views\Review\InputRestaurantNameView.cs" />
     <Compile Include="Views\ViewEngine.cs" />
   </ItemGroup>
   <ItemGroup>

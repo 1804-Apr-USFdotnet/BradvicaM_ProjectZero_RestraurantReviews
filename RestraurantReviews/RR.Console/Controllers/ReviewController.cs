@@ -7,7 +7,7 @@ using RR.ViewModels;
 
 namespace RR.Console.Controllers
 {
-    public class ReviewController : Controller
+    public class ReviewController
     {
         private readonly IReviewService _reviewService;
         private readonly IRestaurantService _restaurantService;
@@ -26,7 +26,7 @@ namespace RR.Console.Controllers
 
             _reviewService.AddReview(review);
 
-            return ViewEngine.View();
+            return ViewEngine.Null();
         }
 
         public ActionResult RestaurantReviews(string restaurantName)
@@ -37,7 +37,7 @@ namespace RR.Console.Controllers
 
             var viewModel = _mapper.Map<IEnumerable<ReviewViewModel>>(reviews);
 
-            return ViewEngine.View(viewModel);
+            return ViewEngine.Null();
         }
     }
 }

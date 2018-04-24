@@ -7,7 +7,7 @@ using RR.ViewModels;
 
 namespace RR.Console.Controllers
 {
-    public class RestaurantController : Controller
+    public class RestaurantController
     {
         private readonly IRestaurantService _restaurantService;
         private readonly IMapper _mapper;
@@ -24,7 +24,7 @@ namespace RR.Console.Controllers
 
             _restaurantService.AddRestaurant(restaurant);
 
-            return ViewEngine.View();
+            return ViewEngine.AddRestaurantSuccess();
         }
 
         public ActionResult AllRestaurants()
@@ -33,7 +33,7 @@ namespace RR.Console.Controllers
 
             var viewModel = _mapper.Map<IEnumerable<RestaurantNameViewModel>>(allRestaurants);
 
-            return ViewEngine.View(viewModel);
+            return ViewEngine.AllRestaurants(viewModel);
         }
 
         public ActionResult TopRatedRestaurants()
@@ -42,16 +42,16 @@ namespace RR.Console.Controllers
 
             var viewModel = _mapper.Map<IEnumerable<TopRatedRestaurantViewModel>>(results);
 
-            return ViewEngine.View(viewModel);
+            return ViewEngine.TopRatedRestaurants(viewModel);
         }
 
-        public ActionResult ViewDetails(string name)
+        public ActionResult RestaurantDetails(string name)
         {
             var restaurant = _restaurantService.SearchByName(name);
 
             var viewModel = _mapper.Map<RestaurantViewModel>(restaurant);
 
-            return ViewEngine.View(viewModel);
+            return ViewEngine.RestaurantDetails(viewModel);
         }
 
         public ActionResult SearchForEntity(string searchValue)
@@ -60,7 +60,17 @@ namespace RR.Console.Controllers
 
             var viewModel = _mapper.Map<IEnumerable<RestaurantViewModel>>(results);
 
-            return ViewEngine.View(viewModel);
+            return ViewEngine.SearchForEntity(viewModel);
+        }
+
+        public ActionResult InputRestaurantName()
+        {
+            return ViewEngine.InputRestaurantName();
+        }
+
+        public ActionResult InputSearchTerm()
+        {
+            return ViewEngine.InputSearchTerm();
         }
     }
 }

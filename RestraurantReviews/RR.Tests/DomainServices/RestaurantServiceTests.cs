@@ -75,5 +75,19 @@ namespace RR.Tests.DomainServices
 
             _mock.Verify(x => x.Add(It.IsAny<Restaurant>()), Times.AtLeastOnce);
         }
+
+        [TestMethod]
+        [UseReporter(typeof(DiffReporter))]
+        public void SearchByName_GivenString_ReturnsCorrectRestaurant()
+        {
+            using (var container = Bootstrapper.RegisterTypes())
+            {
+                var service = container.Resolve<IRestaurantService>();
+
+                var result = service.SearchByName("Billy Bobs Texas BBQ");
+
+                Approvals.Verify(result);
+            }
+        }
     }
 }

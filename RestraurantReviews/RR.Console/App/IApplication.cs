@@ -1,6 +1,6 @@
 ﻿namespace RR.Console
 {
-    public interface IApplication
+    internal interface IApplication
     {
         void Run();
     }

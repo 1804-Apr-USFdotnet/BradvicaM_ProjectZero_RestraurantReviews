@@ -1,33 +1,11 @@
 ﻿Restaurants[0] = 
-Id: 7e9f9924-156e-4b9f-8a41-0f21137e5df4
-Name: Yodel 
-Street: 95612 Mayer Park
-City: Salt Lake City
-State: UT
-ZipCode: 84170
-PhoneNumber: 801 508 2699
-Website: eventbrite.com
-Rating: 10
-
-Restaurants[1] = 
-Id: c325cd17-4619-48bd-97c9-7b2e29db6de9
-Name: Topicblab 
-Street: 9407 Dorton Terrace
-City: Ogden
-State: UT
-ZipCode: 84403
-PhoneNumber: 801 302 4842
-Website: auda.org.au
-Rating: 10
-
-Restaurants[2] = 
-Id: 5788c2ab-a89b-488a-9415-85493383aaa3
-Name: Avaveo 
-Street: 1 Nevada Center
-City: Saint Petersburg
-State: FL
-ZipCode: 33715
-PhoneNumber: 727 144 1174
-Website: yellowbook.com
-Rating: 10
+Id: 664823c7-c985-4987-9d03-f13265f9e84e
+Name: Billy Bobs Texas BBQ 
+Street: 123 Barbeque St.
+City: Kansas City
+State: MO
+ZipCode: 81721
+PhoneNumber: 8761234121
+Website: www.billybobs.com
+Rating: 0
 

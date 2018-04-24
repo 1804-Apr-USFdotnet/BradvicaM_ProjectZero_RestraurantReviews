@@ -1,62 +1,41 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using AutoMapper;
-using RR.DomainContracts;
-using RR.Models;
-using RR.ViewModels;
+﻿using RR.Console.Controllers;
+using RR.Console.Views;
 
 namespace RR.Console
 {
     public class Application : IApplication
     {
-        private readonly IRestaurantService _restaurantService;
-        private readonly IReviewService _reviewService;
-        private readonly ILoggingService _loggingService;
         private readonly IInputOutput _inputOutput;
-        private readonly IMapper _mapper;
+        private readonly RestaurantController _restaurantController;
+        private readonly ReviewController _reviewController;
 
         private bool _userIsDone;
 
-        public Application(IRestaurantService restaurantService, IReviewService reviewService, ILoggingService loggingService, IInputOutput inputOutput, IMapper mapper)
+        public Application(IInputOutput inputOutput, ReviewController reviewController, RestaurantController restaurantController)
         {
-            _restaurantService = restaurantService;
-            _reviewService = reviewService;
-            _loggingService = loggingService;
             _inputOutput = inputOutput;
-            _mapper = mapper;
+            _reviewController = reviewController;
+            _restaurantController = restaurantController;
         }
 
         public void Run()
         {
             while (_userIsDone == false)
             {
-                int userAction = 0;
+                Render(ViewEngine.Index());
 
-                _inputOutput.Output($"\nWelcome to Restaurant Reviews, what would you like to do today?" +
-                                    "\n1 - Add A Restaurant\n2 - View All Restaurants\n3 - Review A Restaurant"  +
-                                    "\n4 - View Top Three Rated Restaurants\n5 - View Restaurant Details" +
-                                    "\n6 - All Reviews Of A Restaurant\n7 - Search\n8 - Quit");
-
-                try
-                {
-                    userAction = _inputOutput.ReadInteger();
-                }
-                catch (Exception e)
-                {
-                    _loggingService.Log(e);
-                }
+                var input = _inputOutput.ReadInteger();
                 
-                switch (userAction)
+                switch (input)
                 {
                     case 1:
-                        AddRestaurant();
+                        //AddRestaurant();
                         break;
                     case 2:
-                        ViewAllRestaurants();
+                        //ViewAllRestaurants();
                         break;
                     case 3:
-                        ReviewRestaurant();
+                        //ReviewRestaurant();
                         break;
                     case 4:
                         TopThreeRatedRestaurants();
@@ -81,6 +60,7 @@ namespace RR.Console
             }
         }
 
+        /*
         private void AddRestaurant()
         {
             _inputOutput.Output("\nLets Add A Restaurant:\n");
@@ -196,50 +176,41 @@ namespace RR.Console
 
             _reviewService.AddReview(_mapper.Map<Review>(review));
         }
+        */
 
         private void TopThreeRatedRestaurants()
         {
-            var results = _restaurantService.TopThreeRestaurantByAverageReview();
-
-            _inputOutput.Output("\nThe Top Three Rated Restaurants Are:\n");
-
-            var viewModel = _mapper.Map<IEnumerable<TopRatedRestaurantViewModel>>(results);
-
-            _inputOutput.Output(viewModel);
+            Render(_restaurantController.TopRatedRestaurants());
         }
 
         private void ViewRestaurantDetails()
         {
-            var restaurantToShow = ChooseARestaurant();
+            Render(_restaurantController.AllRestaurants());
 
-            _inputOutput.Output(restaurantToShow);
+            Render(_restaurantController.RestaurantDetails(ReadInput()));
         }
 
         private void AllReviewsOfARestaurant()
         {
-            var restaurantForReviews = ChooseARestaurant();
+            Render(_restaurantController.InputRestaurantName());
 
-            var reviews = _reviewService.AllReviews(restaurantForReviews);
-
-            _inputOutput.Output(reviews);
+            Render(_reviewController.RestaurantReviews(ReadInput()));
         }
 
         private void Search()
         {
-            _inputOutput.Output("\nPlease enter what keyword you are searching for:\n");
+            Render(_restaurantController.InputSearchTerm());
 
-            var value = _inputOutput.ReadString();
-
-            var results = _restaurantService.SearchAll(value);
-
-            _inputOutput.Output(results);
+            Render(_restaurantController.SearchForEntity(ReadInput()));
         }
 
-        private void Quit()
-        {
-            _userIsDone = true;
-        }
+        private void Quit() => _userIsDone = true;
+  
+        private void Render(ActionResult view) => view.Render();
 
+        private string ReadInput() => _inputOutput.ReadString();
+
+        /*
         private void ViewRestaurantShortList()
         {
             var allretaurants = _restaurantService.AllRestaurants().ToList();
@@ -259,5 +230,7 @@ namespace RR.Console
 
             return _restaurantService.SearchByName(restaurantName);
         }
+        */
+
     }
 }
