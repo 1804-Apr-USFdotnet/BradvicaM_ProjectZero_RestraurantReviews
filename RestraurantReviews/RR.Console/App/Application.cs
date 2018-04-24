@@ -8,16 +8,16 @@ namespace RR.Console
     public class Application : IApplication
     {
         private readonly IInputOutput _inputOutput;
-        private readonly Dictionary<int, IApplicationAction> _applicationSelection;
+        private readonly Dictionary<int, IApplicationAction> _applicationActions;
 
         private const int HomeControllerIndex = 0;
-        private bool _userIsDone;
+        private bool _runApplication = true;
 
         public Application(IInputOutput inputOutput, IContainer container)
         {
             _inputOutput = inputOutput;
 
-            _applicationSelection = new Dictionary<int, IApplicationAction>
+            _applicationActions = new Dictionary<int, IApplicationAction>
             {
                 { 0, container.Resolve<DefaultAction>() },
                 { 1, container.Resolve<AddRestaurantAction>()},
@@ -32,9 +32,9 @@ namespace RR.Console
 
         public void Run()
         {
-            while (_userIsDone == false)
+            while (_runApplication)
             {
-                _applicationSelection[HomeControllerIndex].Execute();
+                _applicationActions[HomeControllerIndex].Execute();
 
                 try
                 {
@@ -42,10 +42,10 @@ namespace RR.Console
 
                     if (input == 8)
                     {
-                        _userIsDone = true;
+                        _runApplication = false;
                     }
 
-                    _applicationSelection[input].Execute();
+                    _applicationActions[input].Execute();
                 }
                 catch (FormatException e)
                 {

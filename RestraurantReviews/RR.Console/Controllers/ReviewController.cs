@@ -26,7 +26,16 @@ namespace RR.Console.Controllers
 
             _reviewService.AddReview(review);
 
-            return ViewEngine.Null();
+            return ViewEngine.AddReview();
+        }
+
+        public ActionResult InputAddReview()
+        {
+            var allRestaurants = _restaurantService.AllRestaurants();
+
+            var viewModel = _mapper.Map<IEnumerable<RestaurantNameViewModel>>(allRestaurants);
+
+            return ViewEngine.InputAddReview(viewModel);
         }
 
         public ActionResult RestaurantReviews(string restaurantName)
@@ -37,7 +46,7 @@ namespace RR.Console.Controllers
 
             var viewModel = _mapper.Map<IEnumerable<ReviewViewModel>>(reviews);
 
-            return ViewEngine.Null();
+            return ViewEngine.RestaurantReviews(viewModel);
         }
     }
 }

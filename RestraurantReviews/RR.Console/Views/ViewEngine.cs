@@ -43,14 +43,24 @@ namespace RR.Console.Views
             return new SearchForEntityView(viewModel);
         }
 
-        public static ActionResult Null()
+        public static ActionResult AddReview()
         {
-            return null;
+            return new AddReviewView();
         }
 
         public static ActionResult RestaurantDetails(RestaurantViewModel viewModel)
         {
             return new RestaurantDetailsView(viewModel);
+        }
+
+        public static ActionResult InputAddReview(IEnumerable<RestaurantNameViewModel> viewModel)
+        {
+            return new InputAddReviewView(viewModel);
+        }
+
+        public static ActionResult RestaurantReviews(IEnumerable<ReviewViewModel> viewModel)
+        {
+            return new RestaurantReviewsView(viewModel);
         }
     }
 }

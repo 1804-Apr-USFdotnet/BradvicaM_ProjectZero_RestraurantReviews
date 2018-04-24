@@ -91,7 +91,10 @@
     <Compile Include="Views\Restaurant\RestaurantDetailsView.cs" />
     <Compile Include="Views\Restaurant\SearchForEntityView.cs" />
     <Compile Include="Views\Restaurant\TopRatedRestaurantsView.cs" />
+    <Compile Include="Views\Review\AddReviewView.cs" />
+    <Compile Include="Views\Review\InputAddReviewView.cs" />
     <Compile Include="Views\Review\InputRestaurantNameView.cs" />
+    <Compile Include="Views\Review\RestaurantReviewsView.cs" />
     <Compile Include="Views\ViewEngine.cs" />
   </ItemGroup>
   <ItemGroup>

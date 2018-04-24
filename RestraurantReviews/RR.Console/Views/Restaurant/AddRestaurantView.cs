@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RR.Console.Views
+namespace RR.Console.Views.Restaurant
 {
     public class AddRestaurantView : ActionResult
     {

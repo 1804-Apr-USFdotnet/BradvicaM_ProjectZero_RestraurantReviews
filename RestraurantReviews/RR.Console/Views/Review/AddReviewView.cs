@@ -1,13 +1,13 @@
-﻿namespace RR.Console.Views.Restaurant
+﻿namespace RR.Console.Views.Review
 {
-    public class AddRestuarantSuccessView : ActionResult
+    public class AddReviewView : ActionResult
     {
         public override void Render()
         {
             System.Console.Clear();
             System.Console.WriteLine();
             System.Console.WriteLine();
-            System.Console.WriteLine("\t\t\t\tThe restaurant has been added.");
+            System.Console.WriteLine("\t\t\t\tReview Has Been Added:");
             System.Console.WriteLine();
             System.Console.WriteLine();
         }

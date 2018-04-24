@@ -8,6 +8,13 @@ namespace RR.Console.Actions
         private readonly ReviewController _reviewController;
         private readonly IInputOutput _inputOutput;
 
+        public AllReviewsOfRestaurantAction(RestaurantController restaurantController, ReviewController reviewController, IInputOutput inputOutput)
+        {
+            _restaurantController = restaurantController;
+            _reviewController = reviewController;
+            _inputOutput = inputOutput;
+        }
+
         public void Execute()
         {
             _restaurantController.InputRestaurantName().Render();

@@ -4,13 +4,13 @@ using RR.ViewModels;
 
 namespace RR.Console.Views.Restaurant
 {
-    class SearchForEntityView : ActionResult
+    public class SearchForEntityView : ActionResult
     {
-        private readonly IEnumerable<RestaurantViewModel> _vm;
+        private readonly IEnumerable<RestaurantViewModel> _viewModel;
 
-        public SearchForEntityView(IEnumerable<RestaurantViewModel> vm)
+        public SearchForEntityView(IEnumerable<RestaurantViewModel> viewModel)
         {
-            _vm = vm;
+            _viewModel = viewModel;
         }
 
         public override void Render()

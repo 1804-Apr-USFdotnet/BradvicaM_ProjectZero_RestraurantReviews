@@ -3,39 +3,28 @@ using RR.ViewModels;
 
 namespace RR.Console.Views.Restaurant
 {
-    internal class TopRatedRestaurantsView : ActionResult
+    public class TopRatedRestaurantsView : ActionResult
     {
-        private readonly IEnumerable<TopRatedRestaurantViewModel> _vm;
+        private readonly IEnumerable<TopRatedRestaurantViewModel> _viewModel;
 
-        public TopRatedRestaurantsView(IEnumerable<TopRatedRestaurantViewModel> vm)
+        public TopRatedRestaurantsView(IEnumerable<TopRatedRestaurantViewModel> viewModel)
         {
-            _vm = vm;
+            _viewModel = viewModel;
         }
 
         public override void Render()
         {
             System.Console.Clear();
-            System.Console.WriteLine("****************************************************************");
-            System.Console.WriteLine("*                     Top Rated Restaurants:                   *");
-            System.Console.WriteLine("*                                                              *");
-            System.Console.WriteLine("*                                                              *");
-            System.Console.WriteLine("*                                                              *");
-            System.Console.WriteLine("*                                                              *");
-            System.Console.WriteLine("*                                                              *");
-            System.Console.WriteLine("*                                                              *");
-            foreach (var i in _vm)
+            System.Console.WriteLine();
+            System.Console.WriteLine();
+            System.Console.WriteLine("\t\t\t\tTop Rated Restaurants:");
+            System.Console.WriteLine();
+            foreach (var i in _viewModel)
             {
-                System.Console.WriteLine($"*  Name: {i.Name}     Rating: {i.AverageRating}    ");
+                System.Console.WriteLine($"\t\t\t\tName: {i.Name}\tRating: {i.AverageRating}");
             }
-            System.Console.WriteLine("*                                                              *");
-            System.Console.WriteLine("*                                                              *");
-            System.Console.WriteLine("*                                                              *");
-            System.Console.WriteLine("*                                                              *");
-            System.Console.WriteLine("*                                                              *");
-            System.Console.WriteLine("*                                                              *");
-            System.Console.WriteLine("*                                                              *");
-            System.Console.WriteLine("*                                                              *");
-            System.Console.WriteLine("****************************************************************");
+            System.Console.WriteLine();
+            System.Console.WriteLine();
         }
     }
 }

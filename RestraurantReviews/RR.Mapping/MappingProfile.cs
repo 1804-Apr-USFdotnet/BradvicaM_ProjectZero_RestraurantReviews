@@ -23,8 +23,10 @@ namespace RR.Mapping
                 .ForSourceMember(x => x.ZipCode, opt => opt.Ignore());
 
             CreateMap<AddReviewViewModel, Review>()
+                .BeforeMap((src, des) => des.Restaurant = new Restaurant())
                 .ForMember(des => des.Id, opt => opt.UseValue(Guid.NewGuid()))
-                .ForPath(des => des.RestaurantId, opt => opt.MapFrom(src => src.Restaurant.Id));
+                .ForPath(des => des.Restaurant.Name, opt => opt.MapFrom(src => src.Restaurant))
+                .ForMember(x => x.RestaurantId, opt => opt.Ignore());
 
             CreateMap<Review, ReviewViewModel>()
                 .ForSourceMember(src => src.Id, opt => opt.Ignore())

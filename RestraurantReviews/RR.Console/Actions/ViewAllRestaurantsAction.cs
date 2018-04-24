@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace RR.Console
+namespace RR.Console.Actions
 {
-    class ViewAllRestaurantsAction : IApplicationAction
+    public class ViewAllRestaurantsAction : IApplicationAction
     {
         public void Execute()
         {
