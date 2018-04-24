@@ -2,7 +2,7 @@
 
 namespace RR.Console.Actions
 {
-    internal class AllReviewsOfRestaurantAction : IApplicationAction
+    public class AllReviewsOfRestaurantAction : IApplicationAction
     {
         private readonly IRestaurantController _restaurantController;
         private readonly IReviewController _reviewController;

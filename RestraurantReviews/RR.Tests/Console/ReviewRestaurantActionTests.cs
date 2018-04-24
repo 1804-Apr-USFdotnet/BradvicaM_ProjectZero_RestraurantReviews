@@ -3,7 +3,6 @@ using Moq;
 using RR.Console;
 using RR.Console.Actions;
 using RR.Console.Controllers;
-using RR.Console.Views.Review;
 using RR.ViewModels;
 
 namespace RR.Tests.Console
@@ -21,7 +20,6 @@ namespace RR.Tests.Console
 
             _controller.Setup(x => x.InputAddReview().Render());
             _controller.Setup(x => x.AddReview(It.IsAny<AddReviewViewModel>()).Render());
-            _controller.Setup(x => x.AddReview(It.IsAny<AddReviewViewModel>())).Returns(new AddReviewView());
         }
 
         [TestMethod]
@@ -31,7 +29,7 @@ namespace RR.Tests.Console
 
             action.Execute();
 
-            _controller.Verify(x => x.AddReview(new AddReviewViewModel()), Times.AtLeastOnce);
+            _controller.Verify(x => x.AddReview(It.IsAny<AddReviewViewModel>()), Times.AtLeastOnce);
         }
 
         [TestMethod]
@@ -51,7 +49,7 @@ namespace RR.Tests.Console
 
             action.Execute();
 
-            _controller.Verify(x => x.AddReview(new AddReviewViewModel()).Render(), Times.AtLeastOnce);
+            _controller.Verify(x => x.AddReview(It.IsAny<AddReviewViewModel>()).Render(), Times.AtLeastOnce);
         }
     }
 }

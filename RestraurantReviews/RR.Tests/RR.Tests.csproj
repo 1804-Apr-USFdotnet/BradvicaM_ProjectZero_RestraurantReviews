@@ -93,6 +93,11 @@
     <Compile Include="Console\AddRestaurantActionTests.cs" />
     <Compile Include="Console\DefaultActionTests.cs" />
     <Compile Include="Console\ReviewRestaurantActionTests.cs" />
+    <Compile Include="Console\AllReviewsOfRestaurantActionTests.cs" />
+    <Compile Include="Console\SearchActionTests.cs" />
+    <Compile Include="Console\ReviewControllerTests.cs" />
+    <Compile Include="Console\ViewRestaurantDetailsActionTests.cs" />
+    <Compile Include="Console\ViewAllRestaurantsActionTests.cs" />
     <Compile Include="DomainServices\RestaurantServiceTests.cs" />
     <Compile Include="DomainServices\ReviewServiceTests.cs" />
     <Compile Include="Mappings\MappingProfileTests.cs" />
@@ -102,6 +107,7 @@
     <Compile Include="QueryObjects\RestaurantReviewsQueryTests.cs" />
     <Compile Include="QueryObjects\TopThreeRatingQueryTests.cs" />
     <Compile Include="QueryObjects\SearchRestaurantQueryTests.cs" />
+    <Compile Include="QueryObjects\FilterRetaurantsQueryTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

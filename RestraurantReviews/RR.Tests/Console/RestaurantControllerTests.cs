@@ -58,7 +58,7 @@ namespace RR.Tests.Console
         {
             using (var container = Bootstrapper.RegisterTypes())
             {
-                var controller = container.Resolve<RestaurantController>();
+                var controller = container.Resolve<IRestaurantController>();
 
                 var result = controller.AllRestaurants("blah");
 
@@ -71,7 +71,7 @@ namespace RR.Tests.Console
         {
             using (var container = Bootstrapper.RegisterTypes())
             {
-                var controller = container.Resolve<RestaurantController>();
+                var controller = container.Resolve<IRestaurantController>();
 
                 var result = controller.AllRestaurants();
 
@@ -84,7 +84,7 @@ namespace RR.Tests.Console
         {
             using (var container = Bootstrapper.RegisterTypes())
             {
-                var controller = container.Resolve<RestaurantController>();
+                var controller = container.Resolve<IRestaurantController>();
 
                 var result = controller.TopRatedRestaurants();
 
@@ -107,7 +107,7 @@ namespace RR.Tests.Console
         {
             using (var container = Bootstrapper.RegisterTypes())
             {
-                var controller = container.Resolve<RestaurantController>();
+                var controller = container.Resolve<IRestaurantController>();
 
                 var result = controller.SearchForEntity("Elba");
 

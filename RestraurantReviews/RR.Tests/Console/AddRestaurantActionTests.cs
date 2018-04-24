@@ -17,12 +17,13 @@ namespace RR.Tests.Console
         public AddRestaurantActionTests()
         {
             _controller = new Mock<IRestaurantController>();
-            _controller.Setup(x => x.InputAddRestaurant().Render());
-            //_controller.Setup(x => x.AddRestaurant(It.IsAny<AddRestaurantViewModel>()));
-            _controller.Setup(x => x.AddRestaurant(It.IsAny<AddRestaurantViewModel>()))
-                .Returns(new AddRestuarantView());
-            _controller.Setup(x => x.AddRestaurant(It.IsAny<AddRestaurantViewModel>()).Render());
             _inputOutput = new Mock<IInputOutput>();
+
+            _controller.Setup(x => x.InputAddRestaurant().Render());
+            _controller.Setup(x => x.AddRestaurant(It.IsAny<AddRestaurantViewModel>()));
+            _controller.Setup(x => x.AddRestaurant(It.IsAny<AddRestaurantViewModel>())).Returns(new AddRestuarantView());
+            _controller.Setup(x => x.AddRestaurant(It.IsAny<AddRestaurantViewModel>()).Render());
+            
         }
 
         [TestMethod]
@@ -32,7 +33,7 @@ namespace RR.Tests.Console
 
             action.Execute();
 
-            _controller.Verify(x => x.AddRestaurant(new AddRestaurantViewModel()), Times.AtLeastOnce);
+            _controller.Verify(x => x.AddRestaurant(It.IsAny<AddRestaurantViewModel>()), Times.AtLeastOnce);
         }
 
         [TestMethod]
@@ -52,7 +53,7 @@ namespace RR.Tests.Console
 
             action.Execute();
 
-            _controller.Verify(x => x.AddRestaurant(new AddRestaurantViewModel()).Render(), Times.AtLeastOnce);
+            _controller.Verify(x => x.AddRestaurant(It.IsAny<AddRestaurantViewModel>()).Render(), Times.AtLeastOnce);
         }
     }
 }

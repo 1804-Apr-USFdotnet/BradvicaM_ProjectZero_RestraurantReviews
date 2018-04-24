@@ -39,29 +39,8 @@ namespace RR.Console.Controllers
         }
 
         public ActionResult AllRestaurants(string orderBy)
-        {
-            var allRestaurants = _restaurantService.AllRestaurants();
-
-            IEnumerable<Restaurant> ordered;
-
-            switch (orderBy.ToLower())
-            {
-                case "name":
-                    ordered = allRestaurants.OrderBy(x => x.Name);
-                    break;
-                case "city":
-                    ordered = allRestaurants.OrderBy(x => x.City);
-                    break;
-                case "state":
-                    ordered = allRestaurants.OrderBy(x => x.State);
-                    break;
-                case "rating":
-                    ordered = allRestaurants.OrderBy(x => x.AverageRating);
-                    break;
-                default:
-                    ordered = allRestaurants.OrderBy(x => x.Name);
-                    break;
-            }
+        { 
+            var ordered = _restaurantService.AllRestaurantsFiltered(orderBy);
 
             var viewModel = _mapper.Map<IEnumerable<RestaurantNameViewModel>>(ordered);
 

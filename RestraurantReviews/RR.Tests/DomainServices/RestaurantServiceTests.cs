@@ -89,5 +89,19 @@ namespace RR.Tests.DomainServices
                 Approvals.Verify(result);
             }
         }
+
+        [TestMethod]
+        [UseReporter(typeof(DiffReporter))]
+        public void AllRestaurantsFiltered_OnCall_ReturnsCorrectFilter()
+        {
+            using (var container = Bootstrapper.RegisterTypes())
+            {
+                var service = container.Resolve<IRestaurantService>();
+
+                var result = service.AllRestaurantsFiltered("name");
+
+                Approvals.VerifyAll(result, "Resaurants");
+            }
+        }
     }
 }
