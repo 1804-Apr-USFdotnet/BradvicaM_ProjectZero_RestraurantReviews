@@ -24,7 +24,7 @@ namespace RR.Tests.DomainServices
         public ReviewServiceTests()
         {
             _restaurantRepo = new Mock<IRestaurantRepository>();
-            _restaurantRepo.Setup(x => x.GetById(It.IsAny<Guid>())).Returns(new Restaurant());
+            _restaurantRepo.Setup(x => x.GetByName(It.IsAny<string>())).Returns(new Restaurant());
             _reviewRepo = new Mock<IReviewRepository>();
             _reviewRepo.Setup(x => x.Add(It.IsAny<Review>()));
             _reviewRepo.Setup(x => x.GetAll(It.IsAny<Expression<Func<Review, bool>>>())).Returns(new List<Review>{new Review()});
@@ -56,7 +56,7 @@ namespace RR.Tests.DomainServices
             {
                 Comment = "Ok",
                 Id = Guid.NewGuid(),
-                Restaurant = new Restaurant { Id = Guid.NewGuid()},
+                Restaurant = new Restaurant { Id = Guid.NewGuid(), Name = "jimmies"},
                 Rating = 5.45,
                 ReviewerName = "Mike"
             };

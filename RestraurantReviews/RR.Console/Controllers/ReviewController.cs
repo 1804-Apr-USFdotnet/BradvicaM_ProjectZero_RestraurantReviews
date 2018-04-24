@@ -7,7 +7,7 @@ using RR.ViewModels;
 
 namespace RR.Console.Controllers
 {
-    public class ReviewController
+    public class ReviewController : IReviewController
     {
         private readonly IReviewService _reviewService;
         private readonly IRestaurantService _restaurantService;

@@ -5,10 +5,10 @@ namespace RR.Console.Actions
 {
     public class ReviewRestaurantAction : IApplicationAction
     {
-        private readonly ReviewController _reviewController;
+        private readonly IReviewController _reviewController;
         private readonly IInputOutput _inputOutput;
 
-        public ReviewRestaurantAction(ReviewController reviewController, IInputOutput inputOutput)
+        public ReviewRestaurantAction(IReviewController reviewController, IInputOutput inputOutput)
         {
             _reviewController = reviewController;
             _inputOutput = inputOutput;

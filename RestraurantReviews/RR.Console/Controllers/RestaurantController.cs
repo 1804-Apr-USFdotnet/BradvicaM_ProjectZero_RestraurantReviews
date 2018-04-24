@@ -8,7 +8,7 @@ using RR.ViewModels;
 
 namespace RR.Console.Controllers
 {
-    public class RestaurantController
+    public class RestaurantController : IRestaurantController
     {
         private readonly IRestaurantService _restaurantService;
         private readonly IMapper _mapper;
@@ -30,7 +30,7 @@ namespace RR.Console.Controllers
 
             _restaurantService.AddRestaurant(restaurant);
 
-            return ViewEngine.AddRestaurantSuccess();
+            return ViewEngine.AddRestaurant();
         }
 
         public ActionResult InputViewRestaurantsFilter()

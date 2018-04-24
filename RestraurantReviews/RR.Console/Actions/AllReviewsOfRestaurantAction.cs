@@ -4,11 +4,11 @@ namespace RR.Console.Actions
 {
     internal class AllReviewsOfRestaurantAction : IApplicationAction
     {
-        private readonly RestaurantController _restaurantController;
-        private readonly ReviewController _reviewController;
+        private readonly IRestaurantController _restaurantController;
+        private readonly IReviewController _reviewController;
         private readonly IInputOutput _inputOutput;
 
-        public AllReviewsOfRestaurantAction(RestaurantController restaurantController, ReviewController reviewController, IInputOutput inputOutput)
+        public AllReviewsOfRestaurantAction(IRestaurantController restaurantController, IReviewController reviewController, IInputOutput inputOutput)
         {
             _restaurantController = restaurantController;
             _reviewController = reviewController;

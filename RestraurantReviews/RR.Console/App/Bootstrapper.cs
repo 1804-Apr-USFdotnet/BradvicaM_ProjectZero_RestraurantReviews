@@ -46,9 +46,9 @@ namespace RR.Console
             builder.RegisterType<Application>().As<IApplication>();
 
             //Controllers
-            builder.RegisterType<RestaurantController>().AsSelf();
-            builder.RegisterType<ReviewController>().AsSelf();
-            builder.RegisterType<HomeController>().AsSelf();
+            builder.RegisterType<RestaurantController>().As<IRestaurantController>();
+            builder.RegisterType<ReviewController>().As<IReviewController>();
+            builder.RegisterType<HomeController>().As<IHomeController>();
 
             //Application Actions
             builder.RegisterType<AddRestaurantAction>().AsSelf();

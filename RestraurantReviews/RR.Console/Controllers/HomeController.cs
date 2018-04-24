@@ -2,7 +2,7 @@
 
 namespace RR.Console.Controllers
 {
-    public class HomeController
+    public class HomeController : IHomeController
     {
         public ActionResult Index()
         {

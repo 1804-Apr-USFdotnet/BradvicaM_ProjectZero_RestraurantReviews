@@ -75,6 +75,9 @@
     <Compile Include="Actions\ReviewRestaurantAction.cs" />
     <Compile Include="Actions\ViewAllRestaurantsAction.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\IHomeController.cs" />
+    <Compile Include="Controllers\IRestaurantController.cs" />
+    <Compile Include="Controllers\IReviewController.cs" />
     <Compile Include="Controllers\RestaurantController.cs" />
     <Compile Include="Controllers\ReviewController.cs" />
     <Compile Include="App\IInputOutput.cs" />
@@ -85,7 +88,7 @@
     <Compile Include="Views\Home\IndexView.cs" />
     <Compile Include="Views\Restaurant\InputAddRestaurantView.cs" />
     <Compile Include="Views\ActionResult.cs" />
-    <Compile Include="Views\Restaurant\AddRestuarantSuccessView.cs" />
+    <Compile Include="Views\Restaurant\AddRestuarantView.cs" />
     <Compile Include="Views\Restaurant\AllRestaurantsView.cs" />
     <Compile Include="Views\Restaurant\InputSearchTermView.cs" />
     <Compile Include="Views\Restaurant\InputViewRestaurantsFilterView.cs" />

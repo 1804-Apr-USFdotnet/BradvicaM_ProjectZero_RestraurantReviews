@@ -4,10 +4,10 @@ namespace RR.Console.Actions
 {
     public class ViewRestaurantDetailsAction : IApplicationAction
     {
-        private readonly RestaurantController _restaurantController;
+        private readonly IRestaurantController _restaurantController;
         private readonly IInputOutput _inputOutput;
 
-        public ViewRestaurantDetailsAction(RestaurantController restaurantController, IInputOutput inputOutput)
+        public ViewRestaurantDetailsAction(IRestaurantController restaurantController, IInputOutput inputOutput)
         {
             _restaurantController = restaurantController;
             _inputOutput = inputOutput;

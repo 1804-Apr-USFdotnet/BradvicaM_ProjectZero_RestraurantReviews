@@ -5,10 +5,10 @@ namespace RR.Console.Actions
 {
     public class AddRestaurantAction : IApplicationAction
     {
-        private readonly RestaurantController _restaurantController;
+        private readonly IRestaurantController _restaurantController;
         private readonly IInputOutput _inputOutput;
 
-        public AddRestaurantAction(RestaurantController restaurantController, IInputOutput inputOutput)
+        public AddRestaurantAction(IRestaurantController restaurantController, IInputOutput inputOutput)
         {
             _restaurantController = restaurantController;
             _inputOutput = inputOutput;

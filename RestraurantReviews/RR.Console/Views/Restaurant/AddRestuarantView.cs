@@ -1,6 +1,6 @@
 ﻿namespace RR.Console.Views.Restaurant
 {
-    public class AddRestuarantSuccessView : ActionResult
+    public class AddRestuarantView : ActionResult
     {
         public override void Render()
         {

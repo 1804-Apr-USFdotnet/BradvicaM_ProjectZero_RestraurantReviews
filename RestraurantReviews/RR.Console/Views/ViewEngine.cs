@@ -8,9 +8,9 @@ namespace RR.Console.Views
 {
     public class ViewEngine
     {
-        public static ActionResult AddRestaurantSuccess()
+        public static ActionResult AddRestaurant()
         {
-            return new AddRestuarantSuccessView();
+            return new AddRestuarantView();
         }
 
         public static ActionResult Index()

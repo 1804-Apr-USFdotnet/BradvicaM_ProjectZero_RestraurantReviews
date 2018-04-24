@@ -2,11 +2,11 @@
 
 namespace RR.Console.Actions
 {
-    internal class TopThreeRatedRestaurantsAction : IApplicationAction
+    public class TopThreeRatedRestaurantsAction : IApplicationAction
     {
-        private readonly RestaurantController _restaurantController;
+        private readonly IRestaurantController _restaurantController;
 
-        public TopThreeRatedRestaurantsAction(RestaurantController restaurantController)
+        public TopThreeRatedRestaurantsAction(IRestaurantController restaurantController)
         {
             _restaurantController = restaurantController;
         }

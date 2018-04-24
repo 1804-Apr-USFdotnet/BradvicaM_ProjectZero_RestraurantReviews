@@ -4,9 +4,9 @@ namespace RR.Console.Actions
 {
     public class DefaultAction : IApplicationAction
     {
-        private readonly HomeController _homeController;
+        private readonly IHomeController _homeController;
 
-        public DefaultAction(HomeController homeController)
+        public DefaultAction(IHomeController homeController)
         {
             _homeController = homeController;
         }
