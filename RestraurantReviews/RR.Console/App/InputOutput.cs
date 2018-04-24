@@ -18,5 +18,10 @@ namespace RR.Console
         {
             return Convert.ToDouble(System.Console.ReadLine());
         }
+
+        public void Output(string value)
+        {
+            System.Console.WriteLine(value);
+        }
     }
 }

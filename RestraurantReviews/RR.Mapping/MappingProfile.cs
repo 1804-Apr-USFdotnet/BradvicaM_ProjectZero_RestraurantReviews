@@ -43,7 +43,8 @@ namespace RR.Mapping
                 .ForSourceMember(x => x.ZipCode, opt => opt.Ignore());
 
             CreateMap<AddRestaurantViewModel, Restaurant>()
-                .ForMember(des => des.Id, opt => opt.UseValue(Guid.NewGuid()));
+                .ForMember(des => des.Id, opt => opt.UseValue(Guid.NewGuid()))
+                .ForMember(x => x.AverageRating, opt => opt.Ignore());
         }
     }
 }

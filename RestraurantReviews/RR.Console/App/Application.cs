@@ -8,15 +8,18 @@ namespace RR.Console
     public class Application : IApplication
     {
         private readonly IInputOutput _inputOutput;
-        private readonly Dictionary<int, IApplicationAction> _applicationActions;
-
+        private Dictionary<int, IApplicationAction> _applicationActions;
         private const int HomeControllerIndex = 0;
+        private const int AppliationClose = 8;
         private bool _runApplication = true;
 
-        public Application(IInputOutput inputOutput, IContainer container)
+        public Application(IInputOutput inputOutput)
         {
-            _inputOutput = inputOutput;
+            _inputOutput = inputOutput; 
+        }
 
+        public void RegisterActions(IContainer container)
+        {
             _applicationActions = new Dictionary<int, IApplicationAction>
             {
                 { 0, container.Resolve<DefaultAction>() },
@@ -40,7 +43,7 @@ namespace RR.Console
                 {
                     var input = _inputOutput.ReadInteger();
 
-                    if (input == 8)
+                    if (input == AppliationClose)
                     {
                         _runApplication = false;
                     }
@@ -49,11 +52,11 @@ namespace RR.Console
                 }
                 catch (FormatException e)
                 {
-                    System.Console.WriteLine($"Numbers Only! {e.Message}");
+                    _inputOutput.Output($"Numbers Only! {e.Message}");
                 }
                 catch (KeyNotFoundException e)
                 {
-                    System.Console.WriteLine($"That Input is not viable! {e.Message}");
+                    _inputOutput.Output($"That Input is not viable! {e.Message}");
                 }
             }
         }

@@ -1,7 +1,10 @@
-﻿namespace RR.Console
+﻿using Autofac;
+
+namespace RR.Console
 {
-    internal interface IApplication
+    public interface IApplication
     {
         void Run();
+        void RegisterActions(IContainer container);
     }
 }

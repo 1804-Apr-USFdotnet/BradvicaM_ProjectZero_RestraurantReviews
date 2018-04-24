@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using AutoMapper;
 using RR.Console.Views;
 using RR.DomainContracts;
@@ -18,6 +19,11 @@ namespace RR.Console.Controllers
             _mapper = mapper;
         }
 
+        public ActionResult InputAddRestaurant()
+        {
+            return ViewEngine.InputAddRestaurant();
+        }
+
         public ActionResult AddRestaurant(AddRestaurantViewModel viewModel)
         {
             var restaurant = _mapper.Map<Restaurant>(viewModel);
@@ -25,6 +31,41 @@ namespace RR.Console.Controllers
             _restaurantService.AddRestaurant(restaurant);
 
             return ViewEngine.AddRestaurantSuccess();
+        }
+
+        public ActionResult InputViewRestaurantsFilter()
+        {
+            return ViewEngine.InputViewRestaurantsFilter();
+        }
+
+        public ActionResult AllRestaurants(string orderBy)
+        {
+            var allRestaurants = _restaurantService.AllRestaurants();
+
+            IEnumerable<Restaurant> ordered;
+
+            switch (orderBy.ToLower())
+            {
+                case "name":
+                    ordered = allRestaurants.OrderBy(x => x.Name);
+                    break;
+                case "city":
+                    ordered = allRestaurants.OrderBy(x => x.City);
+                    break;
+                case "state":
+                    ordered = allRestaurants.OrderBy(x => x.State);
+                    break;
+                case "rating":
+                    ordered = allRestaurants.OrderBy(x => x.AverageRating);
+                    break;
+                default:
+                    ordered = allRestaurants.OrderBy(x => x.Name);
+                    break;
+            }
+
+            var viewModel = _mapper.Map<IEnumerable<RestaurantNameViewModel>>(ordered);
+
+            return ViewEngine.AllRestaurants(viewModel);
         }
 
         public ActionResult AllRestaurants()

@@ -28,9 +28,6 @@ namespace RR.Console
             //Automapper
             builder.RegisterInstance(mapper).As<IMapper>();
 
-            //Auto Container
-            //builder.RegisterInstance(_container).As<IContainer>();
-
             //Logging
             builder.RegisterType<FileLoggingService>().As<ILoggingService>();
 
@@ -44,6 +41,8 @@ namespace RR.Console
 
             //Console
             builder.RegisterType<InputOutput>().As<IInputOutput>();
+
+            //Console
             builder.RegisterType<Application>().As<IApplication>();
 
             //Controllers

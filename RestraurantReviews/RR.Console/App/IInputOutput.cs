@@ -5,5 +5,6 @@
         string ReadString();
         int ReadInteger();
         double ReadDouble();
+        void Output(string value);
     }
 }
