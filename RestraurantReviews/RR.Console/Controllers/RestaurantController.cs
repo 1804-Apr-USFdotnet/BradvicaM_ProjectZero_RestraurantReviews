@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using AutoMapper;
 using RR.Console.Views;
 using RR.DomainContracts;
@@ -20,7 +19,7 @@ namespace RR.Console.Controllers
         }
 
         public ActionResult InputAddRestaurant()
-        {
+        {  
             return ViewEngine.InputAddRestaurant();
         }
 

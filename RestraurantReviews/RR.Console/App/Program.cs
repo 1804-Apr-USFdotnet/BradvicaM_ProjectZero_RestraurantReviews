@@ -4,7 +4,7 @@ namespace RR.Console
 {
     class Program
     {
-        static void Main()
+        private static void Main()
         {
             var container = Bootstrapper.RegisterTypes();
             var application = container.Resolve<IApplication>();
