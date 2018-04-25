@@ -87,6 +87,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Console\RestaurantControllerTests.cs" />
+    <Compile Include="Console\HomeControllerTests.cs" />
+    <Compile Include="Console\TopThreeRatedRestaurantsActionTests.cs" />
+    <Compile Include="Console\AddRestaurantActionTests.cs" />
+    <Compile Include="Console\DefaultActionTests.cs" />
+    <Compile Include="Console\ReviewRestaurantActionTests.cs" />
+    <Compile Include="Console\AllReviewsOfRestaurantActionTests.cs" />
+    <Compile Include="Console\SearchActionTests.cs" />
+    <Compile Include="Console\ReviewControllerTests.cs" />
+    <Compile Include="Console\ViewRestaurantDetailsActionTests.cs" />
+    <Compile Include="Console\ViewAllRestaurantsActionTests.cs" />
     <Compile Include="DomainServices\RestaurantServiceTests.cs" />
     <Compile Include="DomainServices\ReviewServiceTests.cs" />
     <Compile Include="Mappings\MappingProfileTests.cs" />
@@ -96,6 +107,7 @@
     <Compile Include="QueryObjects\RestaurantReviewsQueryTests.cs" />
     <Compile Include="QueryObjects\TopThreeRatingQueryTests.cs" />
     <Compile Include="QueryObjects\SearchRestaurantQueryTests.cs" />
+    <Compile Include="QueryObjects\FilterRetaurantsQueryTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -130,7 +142,12 @@
       <Project>{D196DCBD-1E43-4471-9EF6-F1E675F3F055}</Project>
       <Name>RR.RepositoryContracts</Name>
     </ProjectReference>
+    <ProjectReference Include="..\RR.ViewModels\RR.ViewModels.csproj">
+      <Project>{835F9C96-55E9-456F-BB20-2F437B31202D}</Project>
+      <Name>RR.ViewModels</Name>
+    </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

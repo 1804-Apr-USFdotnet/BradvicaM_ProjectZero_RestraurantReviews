@@ -27,8 +27,10 @@ namespace RR.DomainServices
 
         public void AddReview(Review review)
         {
+            var restaurant = _restaurantRepository.GetByName(review.Restaurant.Name);
+
+            review.Restaurant = restaurant;
             _reviewRepository.Add(review);
-            var restaurant = _restaurantRepository.GetById(review.Restaurant.Id);
 
             var query = new RestaurantReviewsQuery(restaurant);
             var reviews = _reviewRepository.GetAll(query.AsExpression());

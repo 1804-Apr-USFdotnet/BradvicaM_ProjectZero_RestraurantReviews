@@ -40,8 +40,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddRestaurantViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RestaurantNameViewModel.cs" />
     <Compile Include="RestaurantViewModel.cs" />
+    <Compile Include="AddReviewViewModel.cs" />
+    <Compile Include="ReviewViewModel.cs" />
+    <Compile Include="TopRatedRestaurantViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RR.Models\RR.Models.csproj">
+      <Project>{59B9E961-1C32-4EC4-B0A0-E176367070CB}</Project>
+      <Name>RR.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

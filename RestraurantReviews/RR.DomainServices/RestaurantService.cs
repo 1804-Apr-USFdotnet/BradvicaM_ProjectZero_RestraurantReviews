@@ -30,7 +30,7 @@ namespace RR.DomainServices
             return _restaurantRepository.GetAll().ToList();
         }
 
-        public List<Restaurant> SearchByString(string searchParameter)
+        public List<Restaurant> SearchAll(string searchParameter)
         {
             var query = new SearchRestaurantQuery(searchParameter);
 
@@ -39,9 +39,23 @@ namespace RR.DomainServices
             return query.AsExpression(restaurants);
         }
 
+        public Restaurant SearchByName(string searchParameter)
+        {
+            return _restaurantRepository.GetByName(searchParameter);
+        }
+
         public void AddRestaurant(Restaurant restaurant)
         {
             _restaurantRepository.Add(restaurant);
+        }
+
+        public List<Restaurant> AllRestaurantsFiltered(string orderBy)
+        {
+            var allRestaurants = _restaurantRepository.GetAll();
+
+            var query = new FilterRestaurantsQuery(orderBy);
+
+            return query.AsExpression(allRestaurants);
         }
     }
 }

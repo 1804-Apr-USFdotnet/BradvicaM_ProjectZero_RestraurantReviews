@@ -7,6 +7,7 @@ namespace RR.RepositoryContracts
     public interface IRestaurantRepository
     {
         Restaurant GetById(Guid id);
+        Restaurant GetByName(string name);
         IEnumerable<Restaurant> GetAll();
         void Add(Restaurant restaurant);
         void UpdateRestaurants();

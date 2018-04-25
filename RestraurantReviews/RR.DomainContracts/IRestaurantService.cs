@@ -7,7 +7,9 @@ namespace RR.DomainContracts
     {
         List<Restaurant> TopThreeRestaurantByAverageReview();
         List<Restaurant> AllRestaurants();
-        List<Restaurant> SearchByString(string searchParameter);
+        List<Restaurant> SearchAll(string searchParameter);
+        Restaurant SearchByName(string searchParameter);
         void AddRestaurant(Restaurant restaurant);
+        List<Restaurant> AllRestaurantsFiltered(string orderBy);
     }
 }

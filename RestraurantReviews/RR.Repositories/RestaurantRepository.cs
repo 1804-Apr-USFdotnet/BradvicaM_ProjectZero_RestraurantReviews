@@ -20,6 +20,11 @@ namespace RR.Repositories
             return _context.Restaurants.First(x => x.Id == id);
         }
 
+        public Restaurant GetByName(string name)
+        {
+            return _context.Restaurants.First(x => x.Name == name);
+        }
+
         public IEnumerable<Restaurant> GetAll()
         {
             return _context.Restaurants;
