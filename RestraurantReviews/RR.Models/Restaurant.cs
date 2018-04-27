@@ -16,6 +16,8 @@ namespace RR.Models
         public double AverageRating { get; set; }
         public string Website { get; set; }
 
+        public virtual ICollection<Review> Reviews { get; set; }
+
         public override string ToString()
         {
             return $"\nId: {Id}\nName: {Name} \nStreet: {Street}\nCity: {City}\nState: {State}\nZipCode: {ZipCode}" +

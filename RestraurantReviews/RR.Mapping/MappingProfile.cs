@@ -44,7 +44,8 @@ namespace RR.Mapping
 
             CreateMap<AddRestaurantViewModel, Restaurant>()
                 .ForMember(des => des.Id, opt => opt.UseValue(Guid.NewGuid()))
-                .ForMember(x => x.AverageRating, opt => opt.Ignore());
+                .ForMember(x => x.AverageRating, opt => opt.Ignore())
+                .ForMember(x => x.Reviews, opt => opt.Ignore());
         }
     }
 }
