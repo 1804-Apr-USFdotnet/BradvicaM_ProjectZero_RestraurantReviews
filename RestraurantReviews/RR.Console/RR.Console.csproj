@@ -66,8 +66,12 @@
     <Compile Include="Actions\AddRestaurantAction.cs" />
     <Compile Include="Actions\AllReviewsOfRestaurantAction.cs" />
     <Compile Include="Actions\DefaultAction.cs" />
+    <Compile Include="Actions\DeleteRestaurantAction.cs" />
+    <Compile Include="Actions\DeleteReviewAction.cs" />
     <Compile Include="Actions\SearchAction.cs" />
     <Compile Include="Actions\TopThreeRatedRestaurantsAction.cs" />
+    <Compile Include="Actions\UpdateRestaurantAction.cs" />
+    <Compile Include="Actions\UpdateReviewAction.cs" />
     <Compile Include="Actions\ViewRestaurantDetailsAction.cs" />
     <Compile Include="App\Application.cs" />
     <Compile Include="App\IApplication.cs" />
@@ -86,7 +90,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="App\Bootstrapper.cs" />
     <Compile Include="Views\Home\IndexView.cs" />
-    <Compile Include="Views\Restaurant\InputAddRestaurantView.cs" />
+    <Compile Include="Views\Restaurant\InputAddUpdateRestaurantView.cs" />
     <Compile Include="Views\ActionResult.cs" />
     <Compile Include="Views\Restaurant\AddRestuarantView.cs" />
     <Compile Include="Views\Restaurant\AllRestaurantsView.cs" />
@@ -95,6 +99,7 @@
     <Compile Include="Views\Restaurant\RestaurantDetailsView.cs" />
     <Compile Include="Views\Restaurant\SearchForEntityView.cs" />
     <Compile Include="Views\Restaurant\TopRatedRestaurantsView.cs" />
+    <Compile Include="Views\Restaurant\UpdateRestaurantView.cs" />
     <Compile Include="Views\Review\AddReviewView.cs" />
     <Compile Include="Views\Review\InputAddReviewView.cs" />
     <Compile Include="Views\Review\InputRestaurantNameView.cs" />

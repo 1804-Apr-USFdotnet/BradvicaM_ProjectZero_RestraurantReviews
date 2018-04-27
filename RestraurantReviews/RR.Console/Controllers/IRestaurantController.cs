@@ -5,7 +5,7 @@ namespace RR.Console.Controllers
 {
     public interface IRestaurantController
     {
-        ActionResult InputAddRestaurant();
+        ActionResult InputAddUpdateRestaurant();
         ActionResult AddRestaurant(AddRestaurantViewModel viewModel);
         ActionResult InputViewRestaurantsFilter();
         ActionResult AllRestaurants(string orderby);
@@ -15,5 +15,6 @@ namespace RR.Console.Controllers
         ActionResult SearchForEntity(string searchValue);
         ActionResult InputRestaurantName();
         ActionResult InputSearchTerm();
+        ActionResult UpdateRestaurant(string restaurantName, UpdateRestaurantViewModel viewModel);
     }
 }

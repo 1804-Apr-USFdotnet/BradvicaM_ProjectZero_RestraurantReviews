@@ -63,14 +63,19 @@ namespace RR.Console.Views
             return new RestaurantReviewsView(viewModel);
         }
 
-        public static ActionResult InputAddRestaurant()
+        public static ActionResult InputAddUpdateRestaurant()
         {
-            return new InputAddRestaurantView();
+            return new InputAddUpdateRestaurantView();
         }
 
         public static ActionResult InputViewRestaurantsFilter()
         {
             return new InputViewRestaurantsFilterView();
+        }
+
+        public static ActionResult UpdatRestaurant()
+        {
+            return new UpdateRestaurantView();
         }
     }
 }

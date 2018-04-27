@@ -47,6 +47,7 @@
     <Compile Include="AddReviewViewModel.cs" />
     <Compile Include="ReviewViewModel.cs" />
     <Compile Include="TopRatedRestaurantViewModel.cs" />
+    <Compile Include="UpdateRestaurantViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RR.Models\RR.Models.csproj">

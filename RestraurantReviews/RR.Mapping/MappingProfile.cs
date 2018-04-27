@@ -46,6 +46,12 @@ namespace RR.Mapping
                 .ForMember(des => des.Id, opt => opt.UseValue(Guid.NewGuid()))
                 .ForMember(x => x.AverageRating, opt => opt.Ignore())
                 .ForMember(x => x.Reviews, opt => opt.Ignore());
+
+            CreateMap<UpdateRestaurantViewModel, Restaurant>()
+                .ForMember(des => des.Id, opt => opt.MapFrom(src => src.Restaurant.Id))
+                .ForMember(x => x.AverageRating, opt => opt.MapFrom(src => src.Restaurant.AverageRating))
+                .ForMember(x => x.Reviews, opt => opt.MapFrom(src => src.Restaurant.Reviews));
+
         }
     }
 }

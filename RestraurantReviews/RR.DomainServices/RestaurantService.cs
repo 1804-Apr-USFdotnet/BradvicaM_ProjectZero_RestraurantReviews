@@ -49,13 +49,18 @@ namespace RR.DomainServices
             _restaurantRepository.Add(restaurant);
         }
 
-        public List<Restaurant> AllRestaurantsFiltered(string orderBy)
+        public List<Restaurant> AllRestaurants(string orderBy)
         {
             var allRestaurants = _restaurantRepository.GetAll();
 
             var query = new FilterRestaurantsQuery(orderBy);
 
             return query.AsExpression(allRestaurants);
+        }
+
+        public void UpdateRestaurant(Restaurant restaurant)
+        {
+            _restaurantRepository.UpdateRestaurant(restaurant);
         }
     }
 }

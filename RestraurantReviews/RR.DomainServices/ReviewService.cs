@@ -33,7 +33,7 @@ namespace RR.DomainServices
             _reviewRepository.Add(review);
 
             restaurant.CalculateAverageRating(restaurant.Reviews);
-            _restaurantRepository.UpdateRestaurants();
+            _restaurantRepository.UpdateRestaurant();
         }
     }
 }

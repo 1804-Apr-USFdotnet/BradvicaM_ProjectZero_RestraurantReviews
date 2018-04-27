@@ -36,8 +36,15 @@ namespace RR.Repositories
             _context.SaveChanges();
         }
 
-        public void UpdateRestaurants()
+        public void UpdateRestaurant()
         {
+            _context.SaveChanges();
+        }
+
+        public void UpdateRestaurant(Restaurant restaurant)
+        {
+            var entity = _context.Restaurants.FirstOrDefault(x => x.Id == restaurant.Id);
+            _context.Entry(entity).CurrentValues.SetValues(restaurant);
             _context.SaveChanges();
         }
     }

@@ -28,9 +28,9 @@ namespace RR.Tests.Console
         {
             var controller = new RestaurantController(_service.Object, _mapper.Object);
 
-            var result = controller.InputAddRestaurant();
+            var result = controller.InputAddUpdateRestaurant();
 
-            Assert.IsInstanceOfType(result, typeof(InputAddRestaurantView));
+            Assert.IsInstanceOfType(result, typeof(InputAddUpdateRestaurantView));
         }
 
         [TestMethod]
@@ -133,6 +133,16 @@ namespace RR.Tests.Console
             var result = controller.InputSearchTerm();
 
             Assert.IsInstanceOfType(result, typeof(InputSearchTermView));
+        }
+
+        [TestMethod]
+        public void UpdateRestaurant_Returns_CorrectView()
+        {
+            var controller = new RestaurantController(_service.Object, _mapper.Object);
+
+            var result = controller.UpdateRestaurant("blah", new UpdateRestaurantViewModel());
+
+            Assert.IsInstanceOfType(result, typeof(UpdateRestaurantView));
         }
     }
 }

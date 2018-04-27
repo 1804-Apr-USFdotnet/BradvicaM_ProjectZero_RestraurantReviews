@@ -98,10 +98,22 @@ namespace RR.Tests.DomainServices
             {
                 var service = container.Resolve<IRestaurantService>();
 
-                var result = service.AllRestaurantsFiltered("name");
+                var result = service.AllRestaurants("name");
 
                 Approvals.VerifyAll(result, "Resaurants");
             }
+        }
+
+        [TestMethod]
+        public void UpdateRestaurant_GivenEntity_CallsCorrectMethod()
+        {
+            var service = new RestaurantService(_mock.Object);
+
+            var resturant = new Restaurant();
+
+            service.UpdateRestaurant(resturant);
+
+            _mock.Verify(x => x.UpdateRestaurant(It.IsAny<Restaurant>()), Times.AtLeastOnce);
         }
     }
 }

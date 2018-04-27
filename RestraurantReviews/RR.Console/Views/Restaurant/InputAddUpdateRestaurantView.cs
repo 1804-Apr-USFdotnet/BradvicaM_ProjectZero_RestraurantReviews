@@ -1,6 +1,6 @@
 ﻿namespace RR.Console.Views.Restaurant
 {
-    public class InputAddRestaurantView : ActionResult
+    public class InputAddUpdateRestaurantView : ActionResult
     {
         public override void Render()
         {
