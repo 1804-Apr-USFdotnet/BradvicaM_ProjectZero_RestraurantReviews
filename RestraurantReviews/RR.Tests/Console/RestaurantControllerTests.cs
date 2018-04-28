@@ -144,5 +144,15 @@ namespace RR.Tests.Console
 
             Assert.IsInstanceOfType(result, typeof(UpdateRestaurantView));
         }
+
+        [TestMethod]
+        public void DeleteRestaurant_Returns_CorrectView()
+        {
+            var controller = new RestaurantController(_service.Object, _mapper.Object);
+
+            var result = controller.DeleteRestaurant("blah");
+
+            Assert.IsInstanceOfType(result, typeof(DeleteRestaurantView));
+        }
     }
 }

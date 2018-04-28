@@ -12,5 +12,6 @@ namespace RR.RepositoryContracts
         void Add(Restaurant restaurant);
         void UpdateRestaurant();
         void UpdateRestaurant(Restaurant restaurant);
+        void DeleteRestaurant(Restaurant restaurant);
     }
 }

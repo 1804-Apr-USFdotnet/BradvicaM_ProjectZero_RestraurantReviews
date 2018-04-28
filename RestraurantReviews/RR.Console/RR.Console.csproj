@@ -90,6 +90,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="App\Bootstrapper.cs" />
     <Compile Include="Views\Home\IndexView.cs" />
+    <Compile Include="Views\Restaurant\DeleteRestaurantView.cs" />
     <Compile Include="Views\Restaurant\InputAddUpdateRestaurantView.cs" />
     <Compile Include="Views\ActionResult.cs" />
     <Compile Include="Views\Restaurant\AddRestuarantView.cs" />
@@ -103,7 +104,9 @@
     <Compile Include="Views\Review\AddReviewView.cs" />
     <Compile Include="Views\Review\InputAddReviewView.cs" />
     <Compile Include="Views\Review\InputRestaurantNameView.cs" />
+    <Compile Include="Views\Review\InputUpdateReviewView.cs" />
     <Compile Include="Views\Review\RestaurantReviewsView.cs" />
+    <Compile Include="Views\Review\UpdateReviewView.cs" />
     <Compile Include="Views\ViewEngine.cs" />
   </ItemGroup>
   <ItemGroup>

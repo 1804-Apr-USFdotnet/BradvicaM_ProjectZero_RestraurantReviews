@@ -62,5 +62,10 @@ namespace RR.DomainServices
         {
             _restaurantRepository.UpdateRestaurant(restaurant);
         }
+
+        public void DeleteRestaurant(Restaurant restaurant)
+        {
+            _restaurantRepository.DeleteRestaurant(restaurant);
+        }
     }
 }

@@ -35,5 +35,17 @@ namespace RR.DomainServices
             restaurant.CalculateAverageRating(restaurant.Reviews);
             _restaurantRepository.UpdateRestaurant();
         }
+
+        public Review GetByIdentification(int id)
+        {
+            var query = new ReviewIdentificationQuery(id);
+
+            return _reviewRepository.GetAll(query.AsExpression()).First();
+        }
+
+        public void UpdateReview(Review review)
+        {
+            _reviewRepository.Update(review);
+        }
     }
 }

@@ -27,6 +27,7 @@ namespace RR.Tests.DomainServices
             _restaurantRepo.Setup(x => x.GetByName(It.IsAny<string>())).Returns(new Restaurant{Reviews = new List<Review>{new Review()}});
             _reviewRepo = new Mock<IReviewRepository>();
             _reviewRepo.Setup(x => x.Add(It.IsAny<Review>()));
+            _reviewRepo.Setup(x => x.Update(It.IsAny<Review>()));
             _reviewRepo.Setup(x => x.GetAll(It.IsAny<Expression<Func<Review, bool>>>())).Returns(new List<Review>{new Review()});
         }
 
@@ -55,8 +56,8 @@ namespace RR.Tests.DomainServices
             var review = new Review
             {
                 Comment = "Ok",
-                Id = Guid.NewGuid(),
-                Restaurant = new Restaurant { Id = Guid.NewGuid(), Name = "jimmies"},
+                ReviewId = Guid.NewGuid(),
+                Restaurant = new Restaurant { RestaurantId = Guid.NewGuid(), Name = "jimmies"},
                 Rating = 5.45,
                 ReviewerName = "Mike"
             };
@@ -64,6 +65,30 @@ namespace RR.Tests.DomainServices
             service.AddReview(review);
 
             _reviewRepo.Verify(x => x.Add(It.IsAny<Review>()), Times.AtLeastOnce);
+        }
+
+        [TestMethod]
+        public void UpdateReview_GivenReview_CallsUpdate()
+        {
+            var service = new ReviewService(_reviewRepo.Object, _restaurantRepo.Object);
+
+            service.UpdateReview(new Review());
+
+            _reviewRepo.Verify(x => x.Update(It.IsAny<Review>()), Times.AtLeastOnce);
+        }
+
+        [TestMethod]
+        [UseReporter(typeof(DiffReporter))]
+        public void GetByIndentifcation_GivenId_ReturnsCorrectReview()
+        {
+            using (var container = Bootstrapper.RegisterTypes())
+            {
+                var reviewService = container.Resolve<IReviewService>();
+
+                var result = reviewService.GetByIdentification(1);
+
+                Approvals.Verify(result);
+            }
         }
     }
 }

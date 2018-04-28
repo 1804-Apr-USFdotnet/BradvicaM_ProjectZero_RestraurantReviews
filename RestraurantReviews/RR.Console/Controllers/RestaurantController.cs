@@ -102,7 +102,16 @@ namespace RR.Console.Controllers
 
             _restaurantService.UpdateRestaurant(updatedRestaurant);
 
-            return ViewEngine.UpdatRestaurant();
+            return ViewEngine.UpdateRestaurant();
+        }
+
+        public ActionResult DeleteRestaurant(string restaurantName)
+        {
+            var restaurantToDelete = _restaurantService.SearchByName(restaurantName);
+
+            _restaurantService.DeleteRestaurant(restaurantToDelete);
+
+            return ViewEngine.DeleteRestaurant();
         }
     }
 }

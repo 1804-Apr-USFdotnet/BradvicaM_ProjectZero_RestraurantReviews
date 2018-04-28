@@ -8,5 +8,7 @@ namespace RR.Console.Controllers
         ActionResult AddReview(AddReviewViewModel viewModel);
         ActionResult InputAddReview();
         ActionResult RestaurantReviews(string restaurantsName);
+        ActionResult InputUpdateReview();
+        ActionResult UpdateReview(UpdateReviewViewModel viewModel);
     }
 }

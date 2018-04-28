@@ -115,5 +115,17 @@ namespace RR.Tests.DomainServices
 
             _mock.Verify(x => x.UpdateRestaurant(It.IsAny<Restaurant>()), Times.AtLeastOnce);
         }
+
+        [TestMethod]
+        public void DeleteRestaurant_GivenEntity_CallsCorrectMethod()
+        {
+            var service = new RestaurantService(_mock.Object);
+
+            var resturant = new Restaurant();
+
+            service.DeleteRestaurant(resturant);
+
+            _mock.Verify(x => x.DeleteRestaurant(It.IsAny<Restaurant>()), Times.AtLeastOnce);
+        }
     }
 }

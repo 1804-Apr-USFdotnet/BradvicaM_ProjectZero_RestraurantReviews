@@ -61,5 +61,25 @@ namespace RR.Tests.Console
 
             Assert.IsInstanceOfType(result, typeof(RestaurantReviewsView));
         }
+
+        [TestMethod]
+        public void InputUpdateReview_Returns_CorrectView()
+        {
+            var controller = new ReviewController(_reviewService.Object, _container.Resolve<IMapper>(), _restaurantService.Object);
+
+            var result = controller.InputUpdateReview();
+
+            Assert.IsInstanceOfType(result, typeof(InputUpdateReviewView));
+        }
+
+        [TestMethod]
+        public void UpdateReview_Returns_CorrectView()
+        {
+            var controller = new ReviewController(_reviewService.Object, _container.Resolve<IMapper>(), _restaurantService.Object);
+
+            var result = controller.UpdateReview(new UpdateReviewViewModel());
+
+            Assert.IsInstanceOfType(result, typeof(UpdateReviewView));
+        }
     }
 }

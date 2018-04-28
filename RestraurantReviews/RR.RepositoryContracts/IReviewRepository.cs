@@ -10,5 +10,6 @@ namespace RR.RepositoryContracts
         IEnumerable<Review> GetAll(Expression<Func<Review, bool>> predicate);
         IEnumerable<Review> GetAll();
         void Add(Review review);
+        void Update(Review review);
     }
 }

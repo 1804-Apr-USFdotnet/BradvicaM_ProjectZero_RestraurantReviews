@@ -43,6 +43,7 @@
     <Compile Include="FilterRestaurantsQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RestaurantReviewsQuery.cs" />
+    <Compile Include="ReviewIdentificationQuery.cs" />
     <Compile Include="SearchRestaurantQuery.cs" />
     <Compile Include="TopThreeRatingQuery.cs" />
   </ItemGroup>

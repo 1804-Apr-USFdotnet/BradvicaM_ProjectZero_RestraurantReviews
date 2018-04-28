@@ -17,7 +17,7 @@ namespace RR.Tests.Models
             {
                 Comment = "It was kinda meh.",
                 Rating = 4.45,
-                Id = Guid.Empty
+                ReviewId = Guid.Empty
             };
 
             Approvals.Verify(review);

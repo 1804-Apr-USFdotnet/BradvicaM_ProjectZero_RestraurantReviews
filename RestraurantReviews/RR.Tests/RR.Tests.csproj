@@ -112,6 +112,7 @@
     <Compile Include="QueryObjects\TopThreeRatingQueryTests.cs" />
     <Compile Include="QueryObjects\SearchRestaurantQueryTests.cs" />
     <Compile Include="QueryObjects\FilterRetaurantsQueryTests.cs" />
+    <Compile Include="QueryObjects\ReviewIdentificationQueryTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -16,5 +16,6 @@ namespace RR.Console.Controllers
         ActionResult InputRestaurantName();
         ActionResult InputSearchTerm();
         ActionResult UpdateRestaurant(string restaurantName, UpdateRestaurantViewModel viewModel);
+        ActionResult DeleteRestaurant(string restaurantName);
     }
 }

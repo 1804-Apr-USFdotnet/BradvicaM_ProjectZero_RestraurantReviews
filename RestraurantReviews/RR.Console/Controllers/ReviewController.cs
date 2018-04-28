@@ -48,5 +48,26 @@ namespace RR.Console.Controllers
 
             return ViewEngine.RestaurantReviews(viewModel);
         }
+
+        public ActionResult InputUpdateReview()
+        {
+            return ViewEngine.InputUpdateReview();
+        }
+
+        public ActionResult UpdateReview(UpdateReviewViewModel viewModel)
+        {
+            var reviewToUpdate = _reviewService.GetByIdentification(viewModel.ReviewIdentification);
+
+            viewModel.Review = reviewToUpdate;
+
+            var updatedReview = _mapper.Map<Review>(viewModel);
+
+            _reviewService.UpdateReview(updatedReview);
+
+            reviewToUpdate.Restaurant.CalculateAverageRating(reviewToUpdate.Restaurant.Reviews);
+            _restaurantService.UpdateRestaurant(reviewToUpdate.Restaurant);
+
+            return ViewEngine.UpdateReview();
+        }
     }
 }
