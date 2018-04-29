@@ -10,5 +10,7 @@ namespace RR.Console.Controllers
         ActionResult RestaurantReviews(string restaurantsName);
         ActionResult InputUpdateReview();
         ActionResult UpdateReview(UpdateReviewViewModel viewModel);
+        ActionResult InputDeleteReview();
+        ActionResult DeleteReview(int reviewId);
     }
 }

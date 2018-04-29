@@ -47,5 +47,10 @@ namespace RR.DomainServices
         {
             _reviewRepository.Update(review);
         }
+
+        public void DeleteReview(Review review)
+        {
+            _reviewRepository.Delete(review);
+        }
     }
 }

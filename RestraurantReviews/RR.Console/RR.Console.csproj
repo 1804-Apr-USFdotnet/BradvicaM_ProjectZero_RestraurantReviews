@@ -102,7 +102,9 @@
     <Compile Include="Views\Restaurant\TopRatedRestaurantsView.cs" />
     <Compile Include="Views\Restaurant\UpdateRestaurantView.cs" />
     <Compile Include="Views\Review\AddReviewView.cs" />
+    <Compile Include="Views\Review\DeleteReviewView.cs" />
     <Compile Include="Views\Review\InputAddReviewView.cs" />
+    <Compile Include="Views\Review\InputDeleteReviewView.cs" />
     <Compile Include="Views\Review\InputRestaurantNameView.cs" />
     <Compile Include="Views\Review\InputUpdateReviewView.cs" />
     <Compile Include="Views\Review\RestaurantReviewsView.cs" />

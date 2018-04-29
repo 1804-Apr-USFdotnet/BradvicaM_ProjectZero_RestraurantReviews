@@ -38,5 +38,11 @@ namespace RR.Repositories
             _context.Entry(entity).CurrentValues.SetValues(review);
             _context.SaveChanges();
         }
+
+        public void Delete(Review review)
+        {
+            _context.Reviews.Remove(review);
+            _context.SaveChanges();
+        }
     }
 }

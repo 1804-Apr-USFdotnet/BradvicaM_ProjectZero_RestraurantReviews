@@ -28,6 +28,7 @@ namespace RR.Tests.DomainServices
             _reviewRepo = new Mock<IReviewRepository>();
             _reviewRepo.Setup(x => x.Add(It.IsAny<Review>()));
             _reviewRepo.Setup(x => x.Update(It.IsAny<Review>()));
+            _reviewRepo.Setup(x => x.Delete(It.IsAny<Review>()));
             _reviewRepo.Setup(x => x.GetAll(It.IsAny<Expression<Func<Review, bool>>>())).Returns(new List<Review>{new Review()});
         }
 
@@ -89,6 +90,16 @@ namespace RR.Tests.DomainServices
 
                 Approvals.Verify(result);
             }
+        }
+
+        [TestMethod]
+        public void DeleteReview_GivenReview_CallsDeleteMethod()
+        {
+            var service = new ReviewService(_reviewRepo.Object, _restaurantRepo.Object);
+
+            service.DeleteReview(new Review());
+
+            _reviewRepo.Verify(x => x.Delete(It.IsAny<Review>()), Times.AtLeastOnce);
         }
     }
 }

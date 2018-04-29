@@ -69,5 +69,19 @@ namespace RR.Console.Controllers
 
             return ViewEngine.UpdateReview();
         }
+
+        public ActionResult InputDeleteReview()
+        {
+            return ViewEngine.InputDeleteReview();
+        }
+
+        public ActionResult DeleteReview(int reviewId)
+        {
+            var reviewToDelete = _reviewService.GetByIdentification(reviewId);
+
+            _reviewService.DeleteReview(reviewToDelete);
+
+            return ViewEngine.DeleteReview();
+        }
     }
 }

@@ -9,5 +9,6 @@ namespace RR.DomainContracts
         void AddReview(Review review);
         Review GetByIdentification(int id);
         void UpdateReview(Review review);
+        void DeleteReview(Review review);
     }
 }

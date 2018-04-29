@@ -92,5 +92,15 @@ namespace RR.Console.Views
         {
             return new UpdateReviewView();
         }
+
+        public static ActionResult InputDeleteReview()
+        {
+            return new InputDeleteReviewView();
+        }
+
+        public static ActionResult DeleteReview()
+        {
+            return new DeleteReviewView();
+        }
     }
 }
