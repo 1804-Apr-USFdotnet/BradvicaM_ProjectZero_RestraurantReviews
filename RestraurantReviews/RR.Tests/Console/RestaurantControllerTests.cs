@@ -116,16 +116,6 @@ namespace RR.Tests.Console
         }
 
         [TestMethod]
-        public void InputRestaurantName_Returns_CorrectView()
-        {
-            var controller = new RestaurantController(_service.Object, _mapper.Object);
-
-            var result = controller.InputRestaurantName();
-
-            Assert.IsInstanceOfType(result, typeof(InputRestaurantNameView));
-        }
-
-        [TestMethod]
         public void InputSearchTerm_Returns_CorrectView()
         {
             var controller = new RestaurantController(_service.Object, _mapper.Object);

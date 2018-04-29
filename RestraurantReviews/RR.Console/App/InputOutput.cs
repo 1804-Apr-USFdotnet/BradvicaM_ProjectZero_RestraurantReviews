@@ -11,12 +11,34 @@ namespace RR.Console
 
         public int ReadInteger()
         {
-            return Convert.ToInt32(System.Console.ReadLine());
+            var value = 0;
+
+            try
+            {
+                value = Convert.ToInt32(System.Console.ReadLine());
+            }
+            catch (FormatException e)
+            {
+                System.Console.WriteLine($"Numbers Only! {e.Message}");
+            }
+
+            return value;
         }
 
         public double ReadDouble()
         {
-            return Convert.ToDouble(System.Console.ReadLine());
+            var value = 0.0;
+
+            try
+            {
+                value = Convert.ToDouble(System.Console.ReadLine());
+            }
+            catch (FormatException e)
+            {
+                System.Console.WriteLine($"Numbers Only! {e.Message}");
+            }
+
+            return value;
         }
 
         public void Output(string value)

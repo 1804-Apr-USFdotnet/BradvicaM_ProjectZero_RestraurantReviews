@@ -1,11 +1,33 @@
 ﻿Restaurants[0] = 
-Id: 4721084b-ca68-492d-8baa-cc397693025b
-Name: Billy Bobs Texas BBQ 
-Street: 123 Barbeque St.
-City: Kansas City
-State: MO
-ZipCode: 81721
-PhoneNumber: 8761234121
-Website: www.billybobs.com
+Id: 4289efca-80d3-4ca3-bad2-030eaf13a50d
+Name: Harriett 
+Street: 2 Cambridge Point
+City: Cedar Rapids
+State: IA
+ZipCode: 52410
+PhoneNumber: 319-780-0569
+Website: /quam/suspendisse.html
+Rating: 10
+
+Restaurants[1] = 
+Id: 632c2545-9e65-40bb-9072-3b04ac738071
+Name: Dougie 
+Street: 88 4th Court
+City: Los Angeles
+State: CA
+ZipCode: 90030
+PhoneNumber: 213-566-7049
+Website: /odio/condimentum/id/luctus/nec.js
 Rating: 9
+
+Restaurants[2] = 
+Id: c3887baf-9f83-4d26-b19f-b71942932faf
+Name: Tasha 
+Street: 62 Oneill Road
+City: Nashville
+State: TN
+ZipCode: 37215
+PhoneNumber: 615-509-9480
+Website: /eleifend/donec/ut/dolor/morbi/vel.jpg
+Rating: 8
 

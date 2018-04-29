@@ -21,7 +21,7 @@ namespace RR.Console.Views.Restaurant
             System.Console.WriteLine();
             foreach (var i in _viewModel)
             {
-                System.Console.WriteLine($"\t\t\t\tName: {i.Name}\tRating: {i.AverageRating}");
+                System.Console.WriteLine($"\t\t\t\tName: {i.Name}\t\t\tRating: {i.AverageRating}");
             }
             System.Console.WriteLine();
             System.Console.WriteLine();

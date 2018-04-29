@@ -7,4 +7,4 @@ State: MO
 ZipCode: 81721
 PhoneNumber: 8761234121
 Website: www.billybobs.com
-Rating: 9
+Rating: 0

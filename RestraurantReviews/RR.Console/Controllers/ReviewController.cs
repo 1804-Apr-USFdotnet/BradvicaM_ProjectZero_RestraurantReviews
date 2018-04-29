@@ -78,8 +78,12 @@ namespace RR.Console.Controllers
         public ActionResult DeleteReview(int reviewId)
         {
             var reviewToDelete = _reviewService.GetByIdentification(reviewId);
+            var restaurantToUpdate = reviewToDelete.Restaurant;
 
             _reviewService.DeleteReview(reviewToDelete);
+
+            restaurantToUpdate.CalculateAverageRating(restaurantToUpdate.Reviews);
+            _restaurantService.UpdateRestaurant(restaurantToUpdate);
 
             return ViewEngine.DeleteReview();
         }

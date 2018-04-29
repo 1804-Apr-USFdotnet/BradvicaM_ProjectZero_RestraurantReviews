@@ -86,7 +86,7 @@ namespace RR.Tests.DomainServices
             {
                 var reviewService = container.Resolve<IReviewService>();
 
-                var result = reviewService.GetByIdentification(1);
+                var result = reviewService.GetByIdentification(6);
 
                 Approvals.Verify(result);
             }

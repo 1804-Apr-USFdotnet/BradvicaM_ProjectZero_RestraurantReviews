@@ -13,7 +13,6 @@ namespace RR.Console.Controllers
         ActionResult TopRatedRestaurants();
         ActionResult RestaurantDetails(string name);
         ActionResult SearchForEntity(string searchValue);
-        ActionResult InputRestaurantName();
         ActionResult InputSearchTerm();
         ActionResult UpdateRestaurant(string restaurantName, UpdateRestaurantViewModel viewModel);
         ActionResult DeleteRestaurant(string restaurantName);

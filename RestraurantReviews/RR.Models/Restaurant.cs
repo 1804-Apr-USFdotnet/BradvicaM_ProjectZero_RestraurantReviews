@@ -26,7 +26,14 @@ namespace RR.Models
 
         public void CalculateAverageRating(IEnumerable<Review> reviews)
         {
-            AverageRating = reviews.Select(x => x.Rating).Average();
+            if (!reviews.Any())
+            {
+                AverageRating = 0;
+            }
+            else
+            {
+                AverageRating = reviews.Select(x => x.Rating).Average();
+            }
         }
     }
 }

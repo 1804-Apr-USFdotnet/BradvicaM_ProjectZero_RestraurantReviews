@@ -82,11 +82,6 @@ namespace RR.Console.Controllers
             return ViewEngine.SearchForEntity(viewModel);
         }
 
-        public ActionResult InputRestaurantName()
-        {
-            return ViewEngine.InputRestaurantName();
-        }
-
         public ActionResult InputSearchTerm()
         {
             return ViewEngine.InputSearchTerm();
