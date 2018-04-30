@@ -23,9 +23,14 @@ namespace RR.Tests.Console
         {
             _container = Bootstrapper.RegisterTypes();
             _reviewService = new Mock<IReviewService>();
-            _reviewService.Setup(x => x.AddReview(It.IsAny<Review>()));
-            _reviewService.Setup(x => x.AllReviews(It.IsAny<Restaurant>())).Returns(new List<Review>{new Review()});
             _restaurantService = new Mock<IRestaurantService>();
+            _reviewService.Setup(x => x.AddReview(It.IsAny<Review>()));
+            _reviewService.Setup(x => x.GetByIdentification(It.IsAny<int>())).Returns(new Review{Restaurant = new Restaurant{Reviews = new List<Review>{new Review()}}});
+            _reviewService.Setup(x => x.UpdateReview(It.IsAny<Review>()));
+            _restaurantService.Setup(x => x.UpdateRestaurant(It.IsAny<Restaurant>()));
+            _reviewService.Setup(x => x.DeleteReview(It.IsAny<Review>()));
+            _reviewService.Setup(x => x.AllReviews(It.IsAny<Restaurant>())).Returns(new List<Review>{new Review()});
+            
             _restaurantService.Setup(x => x.SearchByName(It.IsAny<string>())).Returns(new Restaurant());
         }
 
@@ -60,6 +65,46 @@ namespace RR.Tests.Console
             var result = controller.RestaurantReviews("Omba");
 
             Assert.IsInstanceOfType(result, typeof(RestaurantReviewsView));
+        }
+
+        [TestMethod]
+        public void InputUpdateReview_Returns_CorrectView()
+        {
+            var controller = new ReviewController(_reviewService.Object, _container.Resolve<IMapper>(), _restaurantService.Object);
+
+            var result = controller.InputUpdateReview();
+
+            Assert.IsInstanceOfType(result, typeof(InputUpdateReviewView));
+        }
+
+        [TestMethod]
+        public void UpdateReview_Returns_CorrectView()
+        {
+            var controller = new ReviewController(_reviewService.Object, _container.Resolve<IMapper>(), _restaurantService.Object);
+
+            var result = controller.UpdateReview(new UpdateReviewViewModel());
+
+            Assert.IsInstanceOfType(result, typeof(UpdateReviewView));
+        }
+
+        [TestMethod]
+        public void InputDeleteReview_ReturnsCorrectView()
+        {
+            var controller = new ReviewController(_reviewService.Object, _container.Resolve<IMapper>(), _restaurantService.Object);
+
+            var result = controller.InputDeleteReview();
+
+            Assert.IsInstanceOfType(result, typeof(InputDeleteReviewView));
+        }
+
+        [TestMethod]
+        public void DeleteReview_ReturnsCorrectView()
+        {
+            var controller = new ReviewController(_reviewService.Object, _container.Resolve<IMapper>(), _restaurantService.Object);
+
+            var result = controller.DeleteReview(1);
+
+            Assert.IsInstanceOfType(result, typeof(DeleteReviewView));
         }
     }
 }

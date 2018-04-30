@@ -20,7 +20,7 @@ namespace RR.Tests.Models
                 State = "MO",
                 Street = "123 Barbeque St.",
                 ZipCode = 81721,
-                Id = Guid.Empty,
+                RestaurantId = Guid.Empty,
                 Name = "Billy Bobs Texas BBQ",
                 PhoneNumber = "8761234121",
                 AverageRating = 0.0,

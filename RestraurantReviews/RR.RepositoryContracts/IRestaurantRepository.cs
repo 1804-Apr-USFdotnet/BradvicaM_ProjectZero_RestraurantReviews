@@ -10,6 +10,8 @@ namespace RR.RepositoryContracts
         Restaurant GetByName(string name);
         IEnumerable<Restaurant> GetAll();
         void Add(Restaurant restaurant);
-        void UpdateRestaurants();
+        void UpdateRestaurant();
+        void UpdateRestaurant(Restaurant restaurant);
+        void DeleteRestaurant(Restaurant restaurant);
     }
 }

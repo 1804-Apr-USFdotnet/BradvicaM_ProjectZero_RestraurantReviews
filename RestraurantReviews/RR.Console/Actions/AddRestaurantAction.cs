@@ -16,7 +16,7 @@ namespace RR.Console.Actions
 
         public void Execute()
         {
-            _restaurantController.InputAddRestaurant().Render();
+            _restaurantController.InputAddUpdateRestaurant().Render();
 
             var name = _inputOutput.ReadString();
             var street = _inputOutput.ReadString();

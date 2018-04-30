@@ -59,6 +59,11 @@ namespace RR.Console
             builder.RegisterType<TopThreeRatedRestaurantsAction>().AsSelf();
             builder.RegisterType<ViewAllRestaurantsAction>().AsSelf();
             builder.RegisterType<ViewRestaurantDetailsAction>().AsSelf();
+            builder.RegisterType<UpdateRestaurantAction>().AsSelf();
+            builder.RegisterType<DeleteRestaurantAction>().AsSelf();
+            builder.RegisterType<UpdateReviewAction>().AsSelf();
+            builder.RegisterType<DeleteReviewAction>().AsSelf();
+            builder.RegisterType<QuitAction>().AsSelf();
 
             _container = builder.Build();
 

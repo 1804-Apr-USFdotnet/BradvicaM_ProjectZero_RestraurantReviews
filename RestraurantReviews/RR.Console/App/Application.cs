@@ -10,7 +10,7 @@ namespace RR.Console
         private readonly IInputOutput _inputOutput;
         private Dictionary<int, IApplicationAction> _applicationActions;
         private const int HomeControllerIndex = 0;
-        private const int AppliationClose = 8;
+        private const int AppliationClose = 12;
         private bool _runApplication = true;
 
         public Application(IInputOutput inputOutput)
@@ -29,7 +29,12 @@ namespace RR.Console
                 { 4, container.Resolve<TopThreeRatedRestaurantsAction>() },
                 { 5, container.Resolve<ViewRestaurantDetailsAction>() },
                 { 6, container.Resolve<AllReviewsOfRestaurantAction>() },
-                { 7, container.Resolve<SearchAction>() }
+                { 7, container.Resolve<SearchAction>() },
+                { 8, container.Resolve<UpdateRestaurantAction>() },
+                { 9, container.Resolve<DeleteRestaurantAction>() },
+                { 10, container.Resolve<UpdateReviewAction>() },
+                { 11, container.Resolve<DeleteReviewAction>() },
+                { 12, container.Resolve<QuitAction>() }
             };
         }
 

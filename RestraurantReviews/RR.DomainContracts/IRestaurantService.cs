@@ -10,6 +10,8 @@ namespace RR.DomainContracts
         List<Restaurant> SearchAll(string searchParameter);
         Restaurant SearchByName(string searchParameter);
         void AddRestaurant(Restaurant restaurant);
-        List<Restaurant> AllRestaurantsFiltered(string orderBy);
+        List<Restaurant> AllRestaurants(string orderBy);
+        void UpdateRestaurant(Restaurant restaurant);
+        void DeleteRestaurant(Restaurant restaurant);
     }
 }

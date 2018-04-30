@@ -7,5 +7,8 @@ namespace RR.DomainContracts
     {
         List<Review> AllReviews(Restaurant restaurant);
         void AddReview(Review review);
+        Review GetByIdentification(int id);
+        void UpdateReview(Review review);
+        void DeleteReview(Review review);
     }
 }

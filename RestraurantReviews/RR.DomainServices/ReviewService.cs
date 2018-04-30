@@ -32,11 +32,25 @@ namespace RR.DomainServices
             review.Restaurant = restaurant;
             _reviewRepository.Add(review);
 
-            var query = new RestaurantReviewsQuery(restaurant);
-            var reviews = _reviewRepository.GetAll(query.AsExpression());
-            
-            restaurant.CalculateAverageRating(reviews);
-            _restaurantRepository.UpdateRestaurants();
+            restaurant.CalculateAverageRating(restaurant.Reviews);
+            _restaurantRepository.UpdateRestaurant();
+        }
+
+        public Review GetByIdentification(int id)
+        {
+            var query = new ReviewIdentificationQuery(id);
+
+            return _reviewRepository.GetAll(query.AsExpression()).First();
+        }
+
+        public void UpdateReview(Review review)
+        {
+            _reviewRepository.Update(review);
+        }
+
+        public void DeleteReview(Review review)
+        {
+            _reviewRepository.Delete(review);
         }
     }
 }

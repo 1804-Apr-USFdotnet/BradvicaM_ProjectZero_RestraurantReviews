@@ -8,5 +8,10 @@ namespace RR.Console.Controllers
         {
             return ViewEngine.Index();
         }
+
+        public ActionResult Quit()
+        {
+            return ViewEngine.Quit();
+        }
     }
 }

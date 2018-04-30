@@ -15,7 +15,7 @@ namespace RR.QueryObjects
 
         public Expression<Func<Review, bool>> AsExpression()
         {
-            return review => review.RestaurantId == _restaurant.Id;
+            return review => review.RestaurantId == _restaurant.RestaurantId;
         }
     }
 }

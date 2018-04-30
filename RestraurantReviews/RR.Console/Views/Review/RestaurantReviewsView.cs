@@ -24,6 +24,7 @@ namespace RR.Console.Views.Review
                 System.Console.WriteLine($"\t\t\t\tName:\t\t{i.ReviewerName}");
                 System.Console.WriteLine($"\t\t\t\tRating:\t\t{i.Rating}");
                 System.Console.WriteLine($"\t\t\t\tComment:\t{i.Comment}");
+                System.Console.WriteLine($"\t\t\t\tId:\t\t{i.ReviewIdentification}");
                 System.Console.WriteLine();
             }
             System.Console.WriteLine();

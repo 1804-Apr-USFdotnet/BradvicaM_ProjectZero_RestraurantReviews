@@ -28,9 +28,9 @@ namespace RR.Tests.Console
         {
             var controller = new RestaurantController(_service.Object, _mapper.Object);
 
-            var result = controller.InputAddRestaurant();
+            var result = controller.InputAddUpdateRestaurant();
 
-            Assert.IsInstanceOfType(result, typeof(InputAddRestaurantView));
+            Assert.IsInstanceOfType(result, typeof(InputAddUpdateRestaurantView));
         }
 
         [TestMethod]
@@ -116,16 +116,6 @@ namespace RR.Tests.Console
         }
 
         [TestMethod]
-        public void InputRestaurantName_Returns_CorrectView()
-        {
-            var controller = new RestaurantController(_service.Object, _mapper.Object);
-
-            var result = controller.InputRestaurantName();
-
-            Assert.IsInstanceOfType(result, typeof(InputRestaurantNameView));
-        }
-
-        [TestMethod]
         public void InputSearchTerm_Returns_CorrectView()
         {
             var controller = new RestaurantController(_service.Object, _mapper.Object);
@@ -133,6 +123,26 @@ namespace RR.Tests.Console
             var result = controller.InputSearchTerm();
 
             Assert.IsInstanceOfType(result, typeof(InputSearchTermView));
+        }
+
+        [TestMethod]
+        public void UpdateRestaurant_Returns_CorrectView()
+        {
+            var controller = new RestaurantController(_service.Object, _mapper.Object);
+
+            var result = controller.UpdateRestaurant("blah", new UpdateRestaurantViewModel());
+
+            Assert.IsInstanceOfType(result, typeof(UpdateRestaurantView));
+        }
+
+        [TestMethod]
+        public void DeleteRestaurant_Returns_CorrectView()
+        {
+            var controller = new RestaurantController(_service.Object, _mapper.Object);
+
+            var result = controller.DeleteRestaurant("blah");
+
+            Assert.IsInstanceOfType(result, typeof(DeleteRestaurantView));
         }
     }
 }

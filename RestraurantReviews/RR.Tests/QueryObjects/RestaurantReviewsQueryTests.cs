@@ -19,7 +19,7 @@ namespace RR.Tests.QueryObjects
             _restaurantId = Guid.NewGuid();
             _restaurant = new Restaurant
             {
-                Id = _restaurantId
+                RestaurantId = _restaurantId
             };
         }
 

@@ -18,9 +18,9 @@ namespace RR.Console.Controllers
             _mapper = mapper;
         }
 
-        public ActionResult InputAddRestaurant()
+        public ActionResult InputAddUpdateRestaurant()
         {  
-            return ViewEngine.InputAddRestaurant();
+            return ViewEngine.InputAddUpdateRestaurant();
         }
 
         public ActionResult AddRestaurant(AddRestaurantViewModel viewModel)
@@ -39,7 +39,7 @@ namespace RR.Console.Controllers
 
         public ActionResult AllRestaurants(string orderBy)
         { 
-            var ordered = _restaurantService.AllRestaurantsFiltered(orderBy);
+            var ordered = _restaurantService.AllRestaurants(orderBy);
 
             var viewModel = _mapper.Map<IEnumerable<RestaurantNameViewModel>>(ordered);
 
@@ -82,14 +82,31 @@ namespace RR.Console.Controllers
             return ViewEngine.SearchForEntity(viewModel);
         }
 
-        public ActionResult InputRestaurantName()
-        {
-            return ViewEngine.InputRestaurantName();
-        }
-
         public ActionResult InputSearchTerm()
         {
             return ViewEngine.InputSearchTerm();
+        }
+
+        public ActionResult UpdateRestaurant(string restaurantName, UpdateRestaurantViewModel viewModel)
+        {
+            var restaurantToUpdate = _restaurantService.SearchByName(restaurantName);
+
+            viewModel.Restaurant = restaurantToUpdate;
+
+            var updatedRestaurant = _mapper.Map<Restaurant>(viewModel);
+
+            _restaurantService.UpdateRestaurant(updatedRestaurant);
+
+            return ViewEngine.UpdateRestaurant();
+        }
+
+        public ActionResult DeleteRestaurant(string restaurantName)
+        {
+            var restaurantToDelete = _restaurantService.SearchByName(restaurantName);
+
+            _restaurantService.DeleteRestaurant(restaurantToDelete);
+
+            return ViewEngine.DeleteRestaurant();
         }
     }
 }

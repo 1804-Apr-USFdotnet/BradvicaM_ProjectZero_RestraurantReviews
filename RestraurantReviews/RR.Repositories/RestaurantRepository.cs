@@ -17,7 +17,7 @@ namespace RR.Repositories
 
         public Restaurant GetById(Guid id)
         {
-            return _context.Restaurants.First(x => x.Id == id);
+            return _context.Restaurants.First(x => x.RestaurantId == id);
         }
 
         public Restaurant GetByName(string name)
@@ -36,8 +36,21 @@ namespace RR.Repositories
             _context.SaveChanges();
         }
 
-        public void UpdateRestaurants()
+        public void UpdateRestaurant()
         {
+            _context.SaveChanges();
+        }
+
+        public void UpdateRestaurant(Restaurant restaurant)
+        {
+            var entity = _context.Restaurants.Find(restaurant.RestaurantId);
+            _context.Entry(entity).CurrentValues.SetValues(restaurant);
+            _context.SaveChanges();
+        }
+
+        public void DeleteRestaurant(Restaurant restaurant)
+        {
+            _context.Restaurants.Remove(restaurant);
             _context.SaveChanges();
         }
     }

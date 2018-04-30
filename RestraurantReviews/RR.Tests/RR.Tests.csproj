@@ -87,6 +87,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Console\DeleteRestaurantActionTests.cs" />
+    <Compile Include="Console\QuitActionTests.cs" />
     <Compile Include="Console\RestaurantControllerTests.cs" />
     <Compile Include="Console\HomeControllerTests.cs" />
     <Compile Include="Console\TopThreeRatedRestaurantsActionTests.cs" />
@@ -96,6 +98,9 @@
     <Compile Include="Console\AllReviewsOfRestaurantActionTests.cs" />
     <Compile Include="Console\SearchActionTests.cs" />
     <Compile Include="Console\ReviewControllerTests.cs" />
+    <Compile Include="Console\DeleteReviewActionTests.cs" />
+    <Compile Include="Console\UpdateReviewActionTests.cs" />
+    <Compile Include="Console\UpdateRestaurantActionTests.cs" />
     <Compile Include="Console\ViewRestaurantDetailsActionTests.cs" />
     <Compile Include="Console\ViewAllRestaurantsActionTests.cs" />
     <Compile Include="DomainServices\RestaurantServiceTests.cs" />
@@ -108,6 +113,7 @@
     <Compile Include="QueryObjects\TopThreeRatingQueryTests.cs" />
     <Compile Include="QueryObjects\SearchRestaurantQueryTests.cs" />
     <Compile Include="QueryObjects\FilterRetaurantsQueryTests.cs" />
+    <Compile Include="QueryObjects\ReviewIdentificationQueryTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

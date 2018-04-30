@@ -19,7 +19,7 @@ namespace RR.Tests.Console
             _restaurantMock = new Mock<IRestaurantController>();
             _reviewMock = new Mock<IReviewController>();
 
-            _restaurantMock.Setup(x => x.InputRestaurantName().Render());
+            _restaurantMock.Setup(x => x.AllRestaurants().Render());
             _reviewMock.Setup(x => x.RestaurantReviews(It.IsAny<string>()));
             _reviewMock.Setup(x => x.RestaurantReviews(It.IsAny<string>()).Render());
         }
@@ -31,7 +31,7 @@ namespace RR.Tests.Console
 
             action.Execute();
 
-            _restaurantMock.Verify(x => x.InputRestaurantName().Render(), Times.AtLeastOnce);
+            _restaurantMock.Verify(x => x.AllRestaurants().Render(), Times.AtLeastOnce);
         }
 
         [TestMethod]
