@@ -33,7 +33,8 @@ namespace RR.Console
                 { 8, container.Resolve<UpdateRestaurantAction>() },
                 { 9, container.Resolve<DeleteRestaurantAction>() },
                 { 10, container.Resolve<UpdateReviewAction>() },
-                { 11, container.Resolve<DeleteReviewAction>() }
+                { 11, container.Resolve<DeleteReviewAction>() },
+                { 12, container.Resolve<QuitAction>() }
             };
         }
 

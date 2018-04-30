@@ -16,5 +16,15 @@ namespace RR.Tests.Console
 
             Assert.IsInstanceOfType(result, typeof(IndexView));
         }
+
+        [TestMethod]
+        public void Quit_Returns_CorrectView()
+        {
+            var controller = new HomeController();
+
+            var result = controller.Quit();
+
+            Assert.IsInstanceOfType(result, typeof(QuitView));
+        }
     }
 }

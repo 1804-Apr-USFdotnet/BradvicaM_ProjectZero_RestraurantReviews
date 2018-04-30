@@ -5,5 +5,6 @@ namespace RR.Console.Controllers
     public interface IHomeController
     {
         ActionResult Index();
+        ActionResult Quit();
     }
 }

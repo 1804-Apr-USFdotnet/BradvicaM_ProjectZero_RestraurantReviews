@@ -102,5 +102,10 @@ namespace RR.Console.Views
         {
             return new DeleteReviewView();
         }
+
+        public static ActionResult Quit()
+        {
+            return new QuitView();
+        }
     }
 }

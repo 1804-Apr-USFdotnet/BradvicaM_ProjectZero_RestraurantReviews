@@ -88,6 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Console\DeleteRestaurantActionTests.cs" />
+    <Compile Include="Console\QuitActionTests.cs" />
     <Compile Include="Console\RestaurantControllerTests.cs" />
     <Compile Include="Console\HomeControllerTests.cs" />
     <Compile Include="Console\TopThreeRatedRestaurantsActionTests.cs" />

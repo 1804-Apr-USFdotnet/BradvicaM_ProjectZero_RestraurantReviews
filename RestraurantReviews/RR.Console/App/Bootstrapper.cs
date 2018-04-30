@@ -63,6 +63,7 @@ namespace RR.Console
             builder.RegisterType<DeleteRestaurantAction>().AsSelf();
             builder.RegisterType<UpdateReviewAction>().AsSelf();
             builder.RegisterType<DeleteReviewAction>().AsSelf();
+            builder.RegisterType<QuitAction>().AsSelf();
 
             _container = builder.Build();
 
