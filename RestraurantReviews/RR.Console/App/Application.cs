@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Autofac;
 using RR.Console.Actions;
+using RR.DomainContracts;
 
 namespace RR.Console
 {
@@ -12,10 +13,12 @@ namespace RR.Console
         private const int HomeControllerIndex = 0;
         private const int AppliationClose = 12;
         private bool _runApplication = true;
+        private readonly ILoggingService _logging;
 
-        public Application(IInputOutput inputOutput)
+        public Application(IInputOutput inputOutput, ILoggingService logging)
         {
-            _inputOutput = inputOutput; 
+            _inputOutput = inputOutput;
+            _logging = logging;
         }
 
         public void RegisterActions(IContainer container)
@@ -58,10 +61,16 @@ namespace RR.Console
                 catch (FormatException e)
                 {
                     _inputOutput.Output($"Numbers Only! {e.Message}");
+                    _logging.Log(e);
                 }
                 catch (KeyNotFoundException e)
                 {
                     _inputOutput.Output($"That Input is not viable! {e.Message}");
+                    _logging.Log(e);
+                }
+                catch (Exception e)
+                {
+                    _logging.Log(e);
                 }
             }
         }
