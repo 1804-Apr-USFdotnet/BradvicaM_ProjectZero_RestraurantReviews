@@ -12,10 +12,11 @@
 <div class="container">
     
     <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-        <a class="navbar-brand">Restaurant Reviews</a>
+        @Html.ActionLink("Restaurant Reviews", "Index", "Home", null, new { @class = "navbar-brand"})
         <div class="navbar-nav">
             @Html.ActionLink("Restaurants", "AllRestaurants", "Restaurant", null, new { @class = "nav-item nav-link" })
             @Html.ActionLink("About Us", "About", "Home", null, new { @class = "nav-item nav-link" })
+            @Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "nav-item nav-link" })
         </div>
         <form class="form-inline ml-auto">
             <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search">
