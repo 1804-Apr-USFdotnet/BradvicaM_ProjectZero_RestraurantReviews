@@ -11,3 +11,16 @@ C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\Restrau
 C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Mapping\obj\Release\RR.Mapping.csproj.CopyComplete
 C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Mapping\obj\Release\RR.Mapping.dll
 C:\Users\MikeB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Mapping\obj\Release\RR.Mapping.pdb
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Mapping\bin\Release\RR.Mapping.dll
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Mapping\bin\Release\RR.Mapping.pdb
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Mapping\bin\Release\AutoMapper.dll
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Mapping\bin\Release\RR.Models.dll
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Mapping\bin\Release\RR.ViewModels.dll
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Mapping\bin\Release\RR.Models.pdb
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Mapping\bin\Release\RR.ViewModels.pdb
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Mapping\bin\Release\AutoMapper.xml
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Mapping\obj\Release\RR.Mapping.csprojResolveAssemblyReference.cache
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Mapping\obj\Release\RR.Mapping.csproj.CoreCompileInputs.cache
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Mapping\obj\Release\RR.Mapping.csproj.CopyComplete
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Mapping\obj\Release\RR.Mapping.dll
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Mapping\obj\Release\RR.Mapping.pdb

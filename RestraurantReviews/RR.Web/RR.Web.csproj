@@ -181,6 +181,7 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\aboutUs.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -255,6 +256,7 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Restaurant\AllRestaurants.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -276,6 +278,10 @@
     <ProjectReference Include="..\RR.DomainServices\RR.DomainServices.csproj">
       <Project>{EC567FED-89B4-44A8-9F19-2FA4E049D940}</Project>
       <Name>RR.DomainServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RR.Logging\RR.Logging.csproj">
+      <Project>{B5B253D7-4101-4735-8682-158834ED05C6}</Project>
+      <Name>RR.Logging</Name>
     </ProjectReference>
     <ProjectReference Include="..\RR.Mapping\RR.Mapping.csproj">
       <Project>{F15D40FD-6608-43F9-9B98-A65088F8E62D}</Project>

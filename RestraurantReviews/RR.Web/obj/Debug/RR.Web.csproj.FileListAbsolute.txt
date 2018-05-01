@@ -252,3 +252,7 @@ C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\Rest
 C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Web\obj\Debug\RR.Web.csproj.CopyComplete
 C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Web\obj\Debug\RR.Web.dll
 C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Web\obj\Debug\RR.Web.pdb
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Web\bin\RR.Logging.dll
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Web\bin\NLog.dll
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Web\bin\RR.Logging.pdb
+C:\Users\MichaelB\Documents\GitHub\BradvicaM_ProjectZero_RestraurantReviews\RestraurantReviews\RR.Web\bin\NLog.xml

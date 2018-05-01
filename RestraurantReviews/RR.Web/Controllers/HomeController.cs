@@ -10,5 +10,11 @@ namespace RR.Web.Controllers
         {
             return View();
         }
+
+        [Route("Home/About")]
+        public ActionResult About()
+        {
+            return View();
+        }
     }
 }
