@@ -7,6 +7,26 @@
 
 <h2>All Restaurants</h2>
 
+<div class="row mb-3">
+    <div class="col">
+        @using (@Html.BeginForm("AllRestaurants", "Restaurant", FormMethod.Post))
+        {
+            @Html.DropDownList("searchBy", new List<SelectListItem>
+            {
+                new SelectListItem{Text = "Name", Value = "Name"},
+                new SelectListItem{Text = "City", Value = "City"},
+                new SelectListItem{Text = "State", Value = "State"},
+                new SelectListItem{Text = "Rating", Value = "Rating"}
+            })
+
+            <input type="submit" class="btn btn-light" value="Submit"/>
+        }
+    </div>
+    <div class="col text-right">
+        @Html.ActionLink("Add Restaurant", "AddRestaurant", "Restaurant", null, new { @class="btn btn-light"})
+    </div>
+</div>
+
 <table class="table table-striped table-dark">
     <thead>
     <tr>
@@ -32,8 +52,11 @@
                 <td>@i.ZipCode</td>
                 <td>@i.PhoneNumber</td>
                 <td>@i.Website</td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
-        }
+            }
     </tbody>
 </table>
 
