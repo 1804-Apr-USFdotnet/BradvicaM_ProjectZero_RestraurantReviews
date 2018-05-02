@@ -4,8 +4,30 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="jumbotron">
+<div class="jumbotron text-dark bg-light">
     <h1 class="display-4">Let's eat some yummy food.</h1>
     <p>Excuse our dust while we do some magic on this page. </p>
 </div>
+
+<div class="row">
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Add A Restaurant</h4>
+                <p class="card-text text-dark">Know of a restaurant that doesn't show up on our site?</p>
+                @Html.ActionLink("Add Restaurant", "AddRestaurant", "Restaurant", null, new {@class = "btn btn-dark"})
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Add A Review</h4>
+                <p class="card-text text-dark">Go somewhere yummy? Let people know about it.</p>
+                @Html.ActionLink("Add Review", "AddReview", "Review", null, new {@class = "btn btn-dark"})
+            </div>
+        </div>
+    </div>
+</div>
+
 

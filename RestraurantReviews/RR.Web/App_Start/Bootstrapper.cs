@@ -4,6 +4,7 @@ using Autofac.Integration.Mvc;
 using AutoMapper;
 using RR.DomainContracts;
 using RR.DomainServices;
+using RR.Logging;
 using RR.Mapping;
 using RR.Repositories;
 using RR.RepositoryContracts;
@@ -28,6 +29,8 @@ namespace RR.Web
 
             //Automapper
             builder.RegisterInstance(mapper).As<IMapper>();
+
+            builder.RegisterType<FileLoggingService>().As<ILoggingService>();
 
             //Repositories
             builder.RegisterType<RestaurantRepository>().As<IRestaurantRepository>();

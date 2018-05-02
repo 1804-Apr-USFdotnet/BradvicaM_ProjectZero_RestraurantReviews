@@ -1,0 +1,50 @@
+﻿@model RR.ViewModels.ContactViewModel
+
+@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Contact Information</h2>
+
+<p>If you need to contact us regarding anything, please fill out the form below and we will get back to you.</p>
+
+@using (Html.BeginForm("Contact", "Home", FormMethod.Post))
+{
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Contact Us</legend>
+        <div class="form-group">
+            @Html.LabelFor(x => x.Name) :
+            <div>
+                @Html.EditorFor(x => x.Name, new { htmlAttributes = new { @class = "form-control", placeholder = "Your name..." }})
+                @Html.ValidationMessageFor(x => x.Name, null, new {@class ="text-danger"})
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(x => x.Email) :
+            <div>
+                @Html.EditorFor(x => x.Email, new { htmlAttributes = new { @class = "form-control", placeholder = "Your email..." } })
+                @Html.ValidationMessageFor(x => x.Email, null, new {@class = "text-danger"})
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(x => x.Phone) :
+            <div>
+                @Html.EditorFor(x => x.Phone, new { htmlAttributes = new { @class = "form-control", placeholder = "Your phone number..." } })
+                @Html.ValidationMessageFor(x => x.Phone, null, new {@class = "text-danger"})
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(x => x.Message) :
+            <div>
+                @Html.EditorFor(x => x.Message, new { htmlAttributes = new { @class = "form-control", placeholder = "Your message..." } })
+                @Html.ValidationMessageFor(x => x.Message, null, new {@class = "text-danger"})
+            </div>
+        </div>
+
+        <input type="submit" class="btn btn-primary" value="Submit"/>
+    </fieldset>
+}
+
